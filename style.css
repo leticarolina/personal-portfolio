@@ -1,0 +1,46 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Tajawal", sans-serif;
+}
+
+#logo-name {
+  font-family: "Fira Sans Extra Condensed", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth; /*smoothly scroll*/
+}
+
+a,
+.button {
+  transition: all 200ms ease; /*redirection of page to be smooth */
+}
+
+nav,
+#navigation-bar {
+  display: flex;
+}
+
+nav {
+  align-items: center;
+  justify-content: space-around;
+  height: 13vh; /*15% viewheight of screen*/
+}
+
+#navigation-bar {
+  gap: 45px;
+  list-style: none; /*remove the list dot*/
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+a:hover {
+  color: green;
+}
