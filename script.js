@@ -1,5 +1,6 @@
 const menuIcon = document.querySelector("#mobile-menu-icon");
 const menuLinks = document.querySelector(".menu-links");
+
 menuIcon.addEventListener("click", () => {
   toogle();
 });
@@ -7,5 +8,7 @@ menuIcon.addEventListener("click", () => {
 function toogle() {
   console.log("hi");
   menuLinks.classList.toggle("open");
-  menuIcon.classList.toggle("open");
+  menuLinks.addEventListener("click", () => {
+    menuLinks.classList.remove("open");
+  });
 }
