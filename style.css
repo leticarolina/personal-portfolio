@@ -134,9 +134,9 @@ section {
   min-height: fit-content;
 }
 
-.section-container {
+/* .section-container {
   display: flex;
-}
+} */
 
 /*profile texts*/
 #hero-section {
@@ -147,10 +147,11 @@ section {
 }
 
 .section__pic-container {
-  display: flex;
-  height: 400px;
-  width: 400px;
+  /* display: flex; */
+  height: 500px;
+  width: 500px;
   margin: 0 auto;
+  position: absolute;
 }
 
 .section_texts {
@@ -196,22 +197,71 @@ a .icon {
   gap: 1rem;
 }
 
-.btn {
+.button {
   font-weight: 600;
   transition: all 300ms ease;
   padding: 1rem;
   width: 8rem;
-  border-radius: 2rem;
-}
-
-.btn-color-2 {
+  border-radius: 1rem;
   border: rgb(53, 53, 53) 0.1rem solid;
   background: none;
 }
 
-.btn-color-2:hover {
-  cursor: pointer;
-  background: rgb(53, 53, 53);
+.btn-container:hover {
+  /* cursor: pointer; */
+  background-color: black;
   color: white;
   border: rgb(255, 255, 255) 0.1rem solid;
+}
+
+/*ABOUT ME*/
+#about {
+  position: relative;
+}
+
+.about-containers {
+  gap: 2rem;
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+}
+
+.about-details-container {
+  justify-content: center;
+  flex-direction: column;
+}
+
+.about-containers,
+.about-details-container {
+  display: flex;
+}
+
+.about-pic {
+  border-radius: 40rem;
+}
+
+.arrow {
+  position: absolute;
+  right: -5rem;
+  bottom: 2.5rem;
+}
+
+.details-container {
+  padding: 1.5rem;
+  flex: 1;
+  background: white;
+  border-radius: 2rem;
+  border: rgb(53, 53, 53) 0.1rem solid;
+  border-color: rgb(163, 163, 163);
+  text-align: center;
+}
+
+.section-container {
+  gap: 4rem;
+  height: 80%;
+}
+
+.section__pic-container {
+  height: 400px;
+  width: 400px;
+  margin: auto 0;
 }
