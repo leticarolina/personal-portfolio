@@ -30,7 +30,7 @@ nav,
 nav {
   align-items: center;
   justify-content: space-around;
-  height: 13vh; /*15% viewheight of screen*/
+  height: 10vh; /*15% viewheight of screen*/
 }
 
 #navigation-bar {
@@ -114,25 +114,14 @@ a:hover {
   width: 150px;
 }
 
-@media screen and (max-width: 500px) {
-  #mobile-nav {
-    display: flex;
-  }
-
-  #desktop-nav {
-    display: none;
-  }
-}
-
 /*main page*/
 
-section {
-  padding-top: 4vh;
-  height: 96vh;
-  margin: 0 10rem;
+/* section {
+  /* padding-top: 4vh; */
+/* height: 90vh; */
+/* margin: 0 10rem;
   box-sizing: border-box;
-  min-height: fit-content;
-}
+  min-height: fit-content; */
 
 /* .section-container {
   display: flex;
@@ -141,9 +130,15 @@ section {
 /*profile texts*/
 #hero-section {
   display: flex;
+  /* vertical-align: middle; */
   justify-content: center;
-  gap: 5rem;
-  height: 80vh;
+  /* gap: 5rem; */
+  /* height: 100vh; */
+  /* padding-top: 4vh; */
+  height: 90vh;
+  /* margin: 0 10rem; */
+  box-sizing: border-box;
+  min-height: fit-content;
 }
 
 .section__pic-container {
@@ -176,12 +171,13 @@ section {
 .name {
   font-size: 30px;
   text-align: center;
+  padding: 15px;
 }
 #social-media {
   display: flex;
   justify-content: center;
   gap: 20px;
-  margin-top: 1rem;
+  margin-top: 25px;
 }
 
 a .icon {
@@ -191,23 +187,23 @@ a .icon {
 
 /* BUTTONS STYLE */
 
-.btn-container {
+.button-container {
   display: flex;
   justify-content: center;
-  gap: 1rem;
+  gap: 20px;
 }
 
 .button {
   font-weight: 600;
   transition: all 300ms ease;
-  padding: 1rem;
-  width: 8rem;
-  border-radius: 1rem;
+  padding: 16px;
+  width: 130px;
+  border-radius: 20px;
   border: rgb(53, 53, 53) 0.1rem solid;
   background: none;
 }
 
-.btn-container:hover {
+.button:hover {
   /* cursor: pointer; */
   background-color: black;
   color: white;
@@ -219,49 +215,87 @@ a .icon {
   position: relative;
 }
 
-.about-containers {
-  gap: 2rem;
+.about-boxes {
+  gap: 20px;
   margin-bottom: 2rem;
   margin-top: 2rem;
+  display: inline-flex;
+  max-width: 500px;
 }
 
-.about-details-container {
-  justify-content: center;
-  flex-direction: column;
-}
-
-.about-containers,
-.about-details-container {
-  display: flex;
-}
-
-.about-pic {
-  border-radius: 40rem;
-}
-
-.arrow {
-  position: absolute;
-  right: -5rem;
-  bottom: 2.5rem;
-}
-
-.details-container {
+.box-details-container {
   padding: 1.5rem;
   flex: 1;
   background: white;
   border-radius: 2rem;
   border: rgb(53, 53, 53) 0.1rem solid;
   border-color: rgb(163, 163, 163);
-  text-align: center;
+}
+
+.arrow {
+  position: relative;
+  right: -5rem;
+  bottom: 2.5rem;
+  justify-content: center;
 }
 
 .section-container {
-  gap: 4rem;
+  /* gap: 4rem; */
   height: 80%;
+  align-self: center;
+  text-align: center;
 }
 
-/* .section__pic-container {
-  height: 400px;
-  width: 400px;
-  margin: auto 0;
+.about-text-container {
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+
+  padding-top: 30px;
+  min-width: 350px;
+}
+
+/* PROJECT SECTION */
+
+/* .color-container {
+  border-color: rgb(163, 163, 163);
+  background: rgb(250, 250, 250);
+}
+
+.project-img {
+  border-radius: 2rem;
+  width: 90%;
+  height: 90%;
+}
+
+.project-title {
+  margin: 1rem;
+  color: black;
+}
+
+.project-btn {
+  color: black;
+  border-color: rgb(163, 163, 163);
 } */
+
+@media screen and (max-width: 500px) {
+  #mobile-nav {
+    display: flex;
+  }
+
+  #desktop-nav {
+    display: none;
+  }
+
+  .about-me-container {
+    margin-left: auto;
+    margin-right: auto;
+    margin-left: 20px;
+    margin-right: 20px;
+    /* position: relative; */
+  }
+  .about-text-container {
+    margin-left: 40px;
+    margin-right: 40px;
+  }
+}
