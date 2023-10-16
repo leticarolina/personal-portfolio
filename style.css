@@ -188,7 +188,7 @@ a .icon {
 /* BUTTONS STYLE */
 
 .button-container {
-  display: flex;
+  /* display: flex; */
   justify-content: center;
   gap: 20px;
 }
@@ -213,6 +213,11 @@ a .icon {
 /*ABOUT ME*/
 #about {
   position: relative;
+  height: 100vh;
+  text-align: center;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .about-boxes {
@@ -232,19 +237,11 @@ a .icon {
   border-color: rgb(163, 163, 163);
 }
 
-.arrow {
-  position: relative;
-  right: -5rem;
-  bottom: 2.5rem;
-  justify-content: center;
-}
-
-.section-container {
-  /* gap: 4rem; */
-  height: 80%;
+/* .section-container {
   align-self: center;
   text-align: center;
-}
+  justify-content: center;
+} */
 
 .about-text-container {
   max-width: 700px;
@@ -255,28 +252,43 @@ a .icon {
   min-width: 350px;
 }
 
+.icon-arrow {
+  cursor: pointer;
+  height: 70px;
+  position: fixed;
+  right: 20px;
+  bottom: 30px;
+  justify-content: center;
+}
+
 /* PROJECT SECTION */
 
-/* .color-container {
-  border-color: rgb(163, 163, 163);
-  background: rgb(250, 250, 250);
+.project-title,
+.about-title {
+  /* gap: 4rem; */
+
+  align-self: center;
+  text-align: center;
 }
 
-.project-img {
-  border-radius: 2rem;
-  width: 90%;
-  height: 90%;
+.projects-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
-.project-title {
-  margin: 1rem;
-  color: black;
+.card {
+  background-color: whitesmoke;
+  max-width: 400px;
+  max-height: 600px;
+  margin: 20px;
 }
 
-.project-btn {
-  color: black;
-  border-color: rgb(163, 163, 163);
-} */
+.card-image {
+  padding: 30px;
+  max-width: 200px;
+  height: 150px;
+}
 
 @media screen and (max-width: 500px) {
   #mobile-nav {
