@@ -210,14 +210,23 @@ a .icon {
   border: rgb(255, 255, 255) 0.1rem solid;
 }
 
-/*ABOUT ME*/
+/*ABOUT ME SECTION*/
+/*ABOUT ME SECTION*/
+
 #about {
   position: relative;
   height: 100vh;
   text-align: center;
   justify-content: center;
-  margin-left: auto;
-  margin-right: auto;
+  display: flex;
+  align-items: center;
+}
+
+.about-title {
+  /* gap: 4rem; */
+
+  align-self: center;
+  text-align: center;
 }
 
 .about-boxes {
@@ -229,12 +238,13 @@ a .icon {
 }
 
 .box-details-container {
-  padding: 1.5rem;
-  flex: 1;
+  padding: 16px;
+  /* flex: 1; */
   background: white;
-  border-radius: 2rem;
+  border-radius: 20px;
   border: rgb(53, 53, 53) 0.1rem solid;
   border-color: rgb(163, 163, 163);
+  min-width: 100px;
 }
 
 /* .section-container {
@@ -245,8 +255,7 @@ a .icon {
 
 .about-text-container {
   max-width: 700px;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 0px 40px;
 
   padding-top: 30px;
   min-width: 350px;
@@ -262,11 +271,17 @@ a .icon {
 }
 
 /* PROJECT SECTION */
+/* PROJECT SECTION */
 
-.project-title,
-.about-title {
-  /* gap: 4rem; */
+#projects {
+  height: 100vh;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+}
 
+.project-title {
+  margin-bottom: -200px;
   align-self: center;
   text-align: center;
 }
@@ -275,19 +290,42 @@ a .icon {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
+  padding-top: 10px;
 }
 
 .card {
   background-color: whitesmoke;
+  width: 300px;
   max-width: 400px;
-  max-height: 600px;
+  height: 450px;
   margin: 20px;
+  border-radius: 20px;
+  border: rgb(53, 53, 53) 0.1rem solid;
+  border-color: rgb(163, 163, 163);
+  padding: 15px;
+  /* position: relative; */
 }
 
 .card-image {
-  padding: 30px;
-  max-width: 200px;
-  height: 150px;
+  width: 270px;
+  height: 270px;
+  /* position: absolute; */
+  /* left: 50%;
+  transform: translateX(-50%); */
+}
+
+.card h2 {
+  text-align: center;
+}
+
+.languages-container {
+  display: inline-flex;
+  padding: 10px;
+}
+
+.languages {
+  padding: 10px;
+  justify-content: center;
 }
 
 @media screen and (max-width: 500px) {
