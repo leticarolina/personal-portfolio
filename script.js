@@ -1,6 +1,8 @@
+const { gsap } = require("gsap/dist/gsap");
+
 const menuIcon = document.querySelector("#mobile-menu-icon");
 const menuLinks = document.querySelector(".menu-links");
-
+console.log(gsap);
 menuIcon.addEventListener("click", () => {
   toogle();
 });
@@ -12,3 +14,7 @@ function toogle() {
     menuLinks.classList.remove("open");
   });
 }
+
+// gsap.to(".box", {
+//   x: 200,
+// });
