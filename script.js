@@ -1,8 +1,7 @@
-const { gsap } = require("gsap/dist/gsap");
-
 const menuIcon = document.querySelector("#mobile-menu-icon");
 const menuLinks = document.querySelector(".menu-links");
-console.log(gsap);
+const svg = document.querySelector("svg");
+
 menuIcon.addEventListener("click", () => {
   toogle();
 });
@@ -15,6 +14,5 @@ function toogle() {
   });
 }
 
-// gsap.to(".box", {
-//   x: 200,
-// });
+gsap.to(svg, { duration: 1, scale: -1, ease: "bounce" });
+gsap.from(".section_texts", { duration: 1, scale: 0 });
