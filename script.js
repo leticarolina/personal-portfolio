@@ -22,19 +22,20 @@ function toogle() {
 // }
 // checkWindowSize();
 
-// const timeline = gsap.timeline({ defaults: { duration: 1 } });
-// timeline
-//   .from(svg, { duration: 1.5, scale: 0, ease: "bounce" })
-//   .from(".hello, .name, .description", {
-//     duration: 0.5,
-//     scale: 0,
-//   })
-//   .fromTo(
-//     ".icon-arrow",
-//     { y: "10", opacity: 0 },
-//     { y: 0, repeat: -1, opacity: 100, duration: 0.9 },
-//     "< 1 "
-//   );
+const timeline = gsap.timeline({ defaults: { duration: 1 } });
+timeline
+  .from(svg, { duration: 1.5, scale: 0, ease: "bounce" })
+  .from(".hello, .name, .description", {
+    duration: 0.5,
+    scale: 0,
+  })
+  .fromTo(
+    ".icon-arrow",
+    { y: "10", opacity: 0 },
+    { y: 0, repeat: -1, opacity: 100, duration: 0.9 },
+    "< 1 "
+  );
+
 // .from(".button", { duration: 1, scale: 0 });
 
 // let cursor = gsap.to(".cursor", {

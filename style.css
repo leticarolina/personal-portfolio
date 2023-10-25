@@ -491,6 +491,8 @@ a .icon {
 @media screen and (max-width: 500px) {
   #mobile-nav {
     display: flex;
+    justify-content: space-between;
+    /* padding: 0px 20px; */
   }
 
   #desktop-nav {
