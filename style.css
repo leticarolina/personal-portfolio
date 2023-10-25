@@ -65,18 +65,19 @@ a:hover {
 }
 
 .mobile-menu {
-  position: relative;
-  display: inline-block;
+  /* margin-right: 20px; */
+  /* position: relative; */
+  /* display: inline-block; */
 }
 
 #mobile-menu-icon {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+  /* display: flex; */
+  /* flex-direction: column; */
+  /* justify-content: space-between; */
   cursor: pointer;
-  height: 25px;
+  height: 35px;
   width: 35px;
-  padding-top: 6px;
+  /* padding-top: 6px; */
 }
 
 #mobile-menu-icon span {
@@ -173,28 +174,33 @@ a:hover {
   font-size: 30px;
 }
 
-.imake {
-  display: inline-flex;
-}
-.cursor {
-}
+/* .imake {
+
+  width: 70px;
+} */
+/* .cursor {
+} */
 .description {
-  font-size: 20px;
-  margin-bottom: 16px;
-  max-width: fit-content;
+  /* width: fit-content; */
+  font-size: 25px;
+  margin-bottom: 20px;
+
+  /* white-space: nowrap;
+  overflow: hidden; */
   /* text-align: center; */
   /* -webkit-transform: translateY(-50%); */
-  transform: translateY(-50%);
+  /* transform: translateY(-50%); */
 
   /* -webkit-box-sizing: content-box;
   box-sizing: content-box; */
 }
 
 .name {
+  margin-bottom: 10px;
   font-size: 50px;
   text-align: center;
   padding-top: 10px;
-  padding-bottom: 20px;
+  /* padding-bottom: 0px; */
   color: whitesmoke;
 }
 #social-media {
@@ -211,28 +217,38 @@ a .icon {
 
 /* BUTTONS STYLE */
 
-.button-container {
+/* .button-container {
   /* display: flex; */
-  justify-content: center;
-  /* gap: 20px; */
-  /* padding: 20px; */
-}
+/* justify-content: center; */
+/* gap: 20px; */
+/* padding: 20px; } */
+/* .button-container {
+  height: 0;
+} */
 
+.download-image {
+  height: 20px;
+  width: 20px;
+}
 .button {
+  /* display: flex; */
   font-weight: 600;
-  transition: all 300ms ease;
-  padding: 15px;
+  transition: all 200ms ease;
+  padding: 10px;
   width: 130px;
-  color: #ab7e56;
-  border: #ab7e56 0.1rem solid;
+  color: white;
+  border: white 0.1rem solid;
   background: none;
+  overflow: hidden;
+  /* height: 50px; */
 }
 
 .button:hover {
   /* cursor: pointer; */
-  background-color: #ab7e56;
-  color: white;
-  border: #ab7e56 0.1rem solid;
+  background-color: rgb(245, 245, 245, 0.2);
+
+  color: black;
+  border: black 0.1rem solid;
 }
 
 /*ABOUT ME SECTION*/
@@ -291,10 +307,11 @@ a .icon {
 
 .icon-arrow {
   cursor: pointer;
-  height: 70px;
+  height: 40px;
   position: absolute;
   justify-content: center;
   bottom: 30px;
+  transform: scaleY(-1);
 }
 
 .upsidedown {
