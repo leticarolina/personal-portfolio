@@ -15,11 +15,13 @@ menuIcon.addEventListener("click", () => {
 
 closeMenu.addEventListener("click", () => {
   menuLinks.classList.remove("open");
+
   mobileMenuIcons.classList.remove("hidden");
 });
 function toogle(menuIcon) {
   console.log("hi");
   menuLinks.classList.add("open");
+  gsap.from(menuLinks, { x: 200, duration: 0.8 });
 
   // heroSection.addEventListener("click", () => {
   //   menuLinks.classList.remove("open");
