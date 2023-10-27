@@ -1,17 +1,29 @@
-const menuIcon = document.querySelector("#mobile-menu-icon");
+const menuIcon = document.querySelector("#menu-icon");
+const closeMenu = document.querySelector("#close-menu-icon");
 const menuLinks = document.querySelector(".menu-links");
 const svg = document.querySelector("svg");
-// const iMakeWebsites = document.querySelector(".description");
+const heroSection = document.querySelector("#hero-section");
+const mobileMenuIcons = document.querySelector("#mobile-menu-icon");
+
 menuIcon.addEventListener("click", () => {
-  toogle();
+  // gsap.to("#menu-icon", {
+  //   x: -200,
+  // });
+  mobileMenuIcons.classList.add("hidden");
+  toogle(menuIcon);
 });
 
-function toogle() {
+closeMenu.addEventListener("click", () => {
+  menuLinks.classList.remove("open");
+  mobileMenuIcons.classList.remove("hidden");
+});
+function toogle(menuIcon) {
   console.log("hi");
-  menuLinks.classList.toggle("open");
-  menuLinks.addEventListener("click", () => {
-    menuLinks.classList.remove("open");
-  });
+  menuLinks.classList.add("open");
+
+  // heroSection.addEventListener("click", () => {
+  //   menuLinks.classList.remove("open");
+  // });
 }
 
 //screen size checkder
@@ -25,14 +37,19 @@ function toogle() {
 const timeline = gsap.timeline({ defaults: { duration: 1 } });
 timeline
   .from(svg, { duration: 1.5, scale: 0, ease: "bounce" })
-  .from(".hello, .name, .description", {
+  .from(".section_texts", {
     duration: 0.5,
     scale: 0,
   })
   .fromTo(
     ".icon-arrow",
     { y: "10", opacity: 0 },
-    { y: 0, repeat: -1, opacity: 100, duration: 0.9 },
+    {
+      y: 0,
+      repeat: -1,
+      opacity: 100,
+      duration: 1,
+    },
     "< 1 "
   );
 
