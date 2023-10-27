@@ -54,6 +54,7 @@ timeline
     },
     "< 1 "
   );
+// .from(".my-picture-container", { x: -800 });
 
 // .from(".button", { duration: 1, scale: 0 });
 

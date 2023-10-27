@@ -260,17 +260,6 @@ a:hover {
   /* padding-bottom: 0px; */
   color: whitesmoke;
 }
-#social-media {
-  display: flex;
-  justify-content: center;
-  gap: 20px;
-  margin-top: 25px;
-}
-
-a .icon {
-  height: 40px;
-  cursor: pointer;
-}
 
 /* BUTTONS STYLE */
 
@@ -306,22 +295,16 @@ a .icon {
 
 /*ABOUT ME SECTION*/
 /*ABOUT ME SECTION*/
+/*ABOUT ME SECTION*/
 
 #about {
   position: relative;
   height: 100vh;
   text-align: center;
-  justify-content: center;
-
-  align-items: center;
-}
-.section-container {
-  display: flex;
-}
-.my-picture {
-  height: 500px;
-  width: 200px;
-  background-color: #53375e;
+  /* justify-content: center; */
+  /* width: 100%; */
+  /* align-items: center; */
+  /* margin: auto; */
 }
 
 .about-title {
@@ -329,21 +312,63 @@ a .icon {
 
   align-self: center;
   text-align: center;
+  margin-bottom: 20px;
+}
+
+.pretitle {
+  font-size: 16px;
+}
+
+.title {
+  font-size: 35px;
+}
+
+.section-container {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* margin-top: 90px; */
+}
+
+.my-picture-container {
+  /* height: 500px;
+  width: 200px; */
+  /* padding-left: 30px; */
+  border-top: black 1px solid;
+  border-left: black 1px solid;
+
+  /* padding-top: 70px; */
+  /* margin-top: 90px; */
+}
+
+.my-picture {
+  margin-top: 20px;
+  margin-left: 20px;
+  background-color: #53375e;
+  height: 600px;
+  width: 250px;
+}
+
+.about-me-container {
+  max-width: 700px;
+  margin-left: 30px;
 }
 
 .about-boxes {
   gap: 20px;
-  margin-bottom: 2rem;
-  margin-top: 2rem;
+  /* margin-bottom: 2rem; */
+  margin-top: 10px;
   display: inline-flex;
-  max-width: 500px;
+  width: 500px;
+  justify-content: center;
 }
 
 .box-details-container {
   padding: 16px;
   /* flex: 1; */
-  background: white;
-  border-radius: 20px;
+  background: none;
+  border-radius: 5px;
   border: rgb(53, 53, 53) 0.1rem solid;
   border-color: rgb(163, 163, 163);
   min-width: 100px;
@@ -356,16 +381,34 @@ a .icon {
 } */
 
 .about-text-container {
-  max-width: 700px;
-  margin: 0px 40px;
+  /* max-width: 600px; */
+  /* margin: 0px 40px; */
+  max-width: 500px;
+  /* text-align: center; */
+  justify-content: center;
+  padding: 40px 30px 20px;
 
-  padding-top: 30px;
-  min-width: 350px;
+  /* width: 400px; */
 }
 /* .arrow-container {
   width: 100vh;
 } */
+#social-media {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 25px;
+}
 
+a .icon {
+  height: 40px;
+  cursor: pointer;
+}
+
+a .icon:hover {
+  transition: all 300ms ease;
+  scale: 1.2;
+}
 .icon-arrow {
   cursor: pointer;
   height: 40px;
@@ -502,8 +545,7 @@ a .icon {
   display: flex;
   justify-content: center;
   /* align-items: center; */
-  border: rgb(53, 53, 53) 0.1rem solid;
-  border-color: rgb(163, 163, 163);
+  border: rgb(163, 163, 163) 0.1rem solid;
   margin: 2rem auto;
   padding: 12px;
 }
