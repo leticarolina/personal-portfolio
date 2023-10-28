@@ -1,3 +1,4 @@
+gsap.registerPlugin(ScrollTrigger);
 const menuIcon = document.querySelector("#menu-icon");
 const closeMenu = document.querySelector("#close-menu-icon");
 const menuLinks = document.querySelector(".menu-links");
@@ -54,7 +55,23 @@ timeline
     },
     "< 1 "
   );
-// .from(".my-picture-container", { x: -800 });
+// .from(".my-picture-container", {
+//   x: -800,
+//   duration: 2,
+//   ScrollTrigger: "#social-media",
+// });
+
+gsap.from(".my-picture-container", {
+  x: -800,
+  duration: 2,
+  ScrollTrigger: "#social-media",
+});
+
+gsap.from(".about-me-container", {
+  x: 1000,
+  duration: 2,
+  ScrollTrigger: "#social-media",
+});
 
 // .from(".button", { duration: 1, scale: 0 });
 
