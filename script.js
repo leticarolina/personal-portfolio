@@ -37,41 +37,43 @@ function toogle(menuIcon) {
 // }
 // checkWindowSize();
 
-const timeline = gsap.timeline({ defaults: { duration: 1 } });
-timeline
-  .from(svg, { duration: 1.5, scale: 0, ease: "bounce" })
-  .from(".section_texts", {
-    duration: 0.5,
-    scale: 0,
-  })
-  .fromTo(
-    ".icon-arrow",
-    { y: "10", opacity: 0 },
-    {
-      y: 0,
-      repeat: -1,
-      opacity: 100,
-      duration: 1,
-    },
-    "< 1 "
-  );
+// const timeline = gsap.timeline({ defaults: { duration: 1 } });
+// timeline
+//   .from(svg, { duration: 1.5, scale: 0, ease: "bounce" })
+//   .from(".section_texts", {
+//     duration: 0.5,
+//     scale: 0,
+//   })
+//   .fromTo(
+//     ".icon-arrow",
+//     { y: "10", opacity: 0 },
+//     {
+//       y: 0,
+//       repeat: -1,
+//       opacity: 100,
+//       duration: 1,
+//     },
+//     "< 1 "
+//   );
+
 // .from(".my-picture-container", {
 //   x: -800,
 //   duration: 2,
 //   ScrollTrigger: "#social-media",
 // });
 
-gsap.from(".my-picture-container", {
-  x: -800,
-  duration: 2,
-  ScrollTrigger: "#social-media",
-});
+// gsap for about me
+// gsap.from(".my-picture-container", {
+//   x: -800,
+//   duration: 2,
+//   ScrollTrigger: "#social-media",
+// });
 
-gsap.from(".about-me-container", {
-  x: 1000,
-  duration: 2,
-  ScrollTrigger: "#social-media",
-});
+// gsap.from(".about-me-container", {
+//   x: 1000,
+//   duration: 2,
+//   ScrollTrigger: "#social-media",
+// });
 
 // .from(".button", { duration: 1, scale: 0 });
 
