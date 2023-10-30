@@ -99,21 +99,19 @@
       <div class="section_texts">
         <p class="hello">Hello, I'm</p>
         <h1 class="name">Leticia</h1>
+
         <!-- <div class="imake"> -->
-        <p class="description">I make websites</p>
+        <div class="imake">
+          <p class="description"></p>
+          <span id="cursor">|</span>
+        </div>
+
         <!--  -->
         <!-- </p> -->
         <!-- </div> -->
 
         <!-- <div class="button-container"> -->
-        <button class="button">
-          <!-- <img
-            src="/pictures/download.svg"
-            alt="Download icon"
-            class="download-image"
-          />-->
-          Download CV
-        </button>
+        <!-- <button class="button">Download CV</button> -->
         <!-- </div> -->
       </div>
 
@@ -152,18 +150,21 @@
 
           <div class="about-text-container">
             <p>
-              The bind of design and technology has always fascinated me. Fast
-              forward to 2023 and I’ve What excites me most about being a
-              Product Designer is being able to design and create things that
-              have purpose and solve real problems. It goes beyond designing
-              buttons and websites and involves having a passion for designing
-              experiences and solutions that help people. The bind of design and
-              technology has always fascinated me. <br /><br />Fast forward to
-              2023 and I’ve What excites me most about being a Product Designer
-              is being able to design and create things that have purpose and
-              solve real problems. It goes beyond designing buttons and websites
-              and involves having a passion for designing experiences and
-              solutions that help people
+              My name is Leticia, and I am currently in a career transition with
+              a dedication to studying to become a frontend developer.
+              <br />Since my early 20s, when I was practicing as an architect,
+              the combination of design and technology has always fascinated me.
+              In the end of 2021 I ventured into the technology and blockchain
+              industry, from that point I knew it was time for a change, and as
+              I embarked on the transition to become a web developer, I became
+              deeply driven by the opportunity to maintain a creative mindset,
+              but this time directed towards building applications and
+              experiences that serve a purpose and solve real problems.
+              <br /><br />My journey is an ongoing exploration of creativity,
+              technology, and purpose-driven development. I'm really focused on
+              realizing my vision and creating a better digital world. When I’m
+              not at the computer, you can find me doing sports, hanging out at
+              the beach, or painting.
             </p>
           </div>
           <div id="social-media">
@@ -179,6 +180,7 @@
                 alt="Github page"
                 class="icon github"
             /></a>
+            <button class="button">Download CV</button>
           </div>
         </div>
         <img
@@ -206,24 +208,44 @@
             </p>
 
             <div class="button-container-project">
-              <button class="button-project">Live</button>
-              <button class="button-project">Github</button>
+              <a
+                class="project-link"
+                href="https://leticarolina.github.io/quote-generator/"
+                target="_blank"
+                ><div>Live</div></a
+              >
+              <a
+                class="project-link"
+                href="https://github.com/leticarolina/quote-generator"
+                target="_blank"
+                ><div>Github</div></a
+              >
             </div>
           </div>
         </div>
         <div class="card">
           <div class="all-card-content">
             <div class="card-title">
-              <span>High Resolution</span>
+              <span>Infinity Scroll</span>
             </div>
             <p class="project-description">
-              This page is a compilation of high quality pictures that will
-              never stop scrolling.
+              This page is a compilation of high quality pictures from Unsplash
+              API that will never stop scrolling.
             </p>
 
             <div class="button-container-project">
-              <button class="button-project">Live</button>
-              <button class="button-project">Github</button>
+              <a
+                class="project-link"
+                href="https://leticarolina.github.io/Infinity-scroll/"
+                target="_blank"
+                ><div>Live</div></a
+              >
+              <a
+                class="project-link"
+                href="https://github.com/leticarolina/Infinity-scroll"
+                target="_blank"
+                ><div>Github</div></a
+              >
             </div>
           </div>
         </div>
@@ -235,8 +257,10 @@
             <p class="project-description">Coming soon...</p>
 
             <div class="button-container-project">
-              <button class="button-project unavailable">Live</button>
-              <button class="button-project unavailable">Github</button>
+              <div class="button-container-project">
+                <a class="project-link unavailable"><div>Live</div></a>
+                <a class="project-link unavailable"><div>Github</div></a>
+              </div>
             </div>
           </div>
         </div>
@@ -271,7 +295,7 @@
       <nav>
         <div class="footer-nav">
           <ul id="navigation-bar-footer">
-            <li><a href="#contact">Home</a></li>
+            <li><a href="#desktop-nav">Home</a></li>
             <li><a href="#about">About</a></li>
             <li><a href="#projects">Projects</a></li>
           </ul>

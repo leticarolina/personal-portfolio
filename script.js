@@ -39,11 +39,26 @@ function toogle(menuIcon) {
 
 const timeline = gsap.timeline({ defaults: { duration: 1 } });
 timeline
-  .from(svg, { duration: 1.5, scale: 0, ease: "bounce" })
-  .from(".section_texts", {
+  .fromTo(svg, { scale: 0, ease: "bounce" }, { scale: 0.95, ease: "bounce" })
+  .from(".hello, .name", {
     duration: 0.5,
     scale: 0,
   })
+  .fromTo(
+    "#cursor",
+    { autoAlpha: 0, x: -12 }, // x: -10 to make cursor closer to the text
+    { autoAlpha: 1, duration: 0.6, repeat: -1, ease: SteppedEase.config(1) }
+  )
+  .to(
+    ".description",
+    {
+      text: {
+        value: "I make websites",
+      },
+      duration: 2.3,
+    },
+    " < 1"
+  )
   .fromTo(
     ".icon-arrow",
     { y: "10", opacity: 0 },
@@ -53,7 +68,7 @@ timeline
       opacity: 100,
       duration: 1,
     },
-    "< 1 "
+    "< 2.8 "
   );
 
 // .from(".my-picture-container", {
@@ -66,13 +81,13 @@ timeline
 gsap.from(".my-picture-container", {
   x: -800,
   duration: 2,
-  ScrollTrigger: "#social-media",
+  ScrollTrigger: ".trigger",
 });
 
 gsap.from(".about-me-container", {
   x: 1000,
   duration: 2,
-  ScrollTrigger: "#social-media",
+  ScrollTrigger: ".trigger",
 });
 
 // .from(".button", { duration: 1, scale: 0 });
