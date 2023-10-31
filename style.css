@@ -698,7 +698,7 @@ a .icon:hover {
 /* MEDIA QUERY*/
 /* MEDIA QUERY*/
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 768px) {
   body {
     overflow-x: hidden;
   }
@@ -722,11 +722,12 @@ a .icon:hover {
     height: 100vh;
   } */
   .about-me-container {
-    margin-left: auto;
-    margin-right: auto;
-    margin-left: 20px;
-    margin-right: 20px;
+    /* margin-left: auto;
+    margin-right: auto; */
+    /* margin-left: 10px;
+    margin-right: 10px; */
     /* position: relative; */
+    width: 600px;
   }
 
   .my-picture-container {
