@@ -40,32 +40,27 @@ timeline
     },
     " < 1"
   )
-  .fromTo(
+  .from(
     ".icon-arrow",
-    { y: "10", opacity: 0 },
-    {
-      y: 0,
-      repeat: -1,
-      opacity: 100,
-      duration: 1,
-    },
+    { opacity: 0 },
+
     "< 2.8 "
   );
 
 // gsap for about me
-// gsap.registerPlugin(ScrollTrigger);
+gsap.registerPlugin(ScrollTrigger);
 
-// gsap.from(".my-picture-container", {
-//   x: -800,
-//   duration: 2,
-//   ScrollTrigger: ".trigger",
-// });
+gsap.from(".my-picture-container", {
+  x: -800,
+  duration: 2,
+  ScrollTrigger: ".my-picture-container",
+});
 
-// gsap.from(".about-me-container", {
-//   x: 1000,
-//   duration: 2,
-//   ScrollTrigger: ".trigger",
-// });
+gsap.from(".about-me-container", {
+  x: 1000,
+  duration: 2,
+  ScrollTrigger: ".my-picture-container",
+});
 
 // GSAP
 // GSAP
