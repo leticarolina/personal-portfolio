@@ -13,33 +13,36 @@ const myName = document.querySelector(".name");
 // GSAP
 
 const timeline = gsap.timeline({ defaults: { duration: 1 } });
-timeline
-  .fromTo(svg, { scale: 0, ease: "bounce" }, { scale: 0.95, ease: "bounce" })
-  .from(".hello, .name", {
-    duration: 0.5,
-    scale: 0,
-  })
-  .fromTo(
-    "#cursor",
-    { autoAlpha: 0, x: -12 }, // x: -10 to make cursor closer to the text
-    { autoAlpha: 1, duration: 0.6, repeat: -1, ease: SteppedEase.config(1) }
-  )
-  .to(
-    ".description",
-    {
-      text: {
-        value: "I make websites",
+function runAnimation() {
+  timeline
+    .fromTo(svg, { scale: 0, ease: "bounce" }, { scale: 0.95, ease: "bounce" })
+    .from(".hello, .name", {
+      duration: 0.5,
+      scale: 0,
+    })
+    .fromTo(
+      "#cursor",
+      { autoAlpha: 0, x: -12 }, // x: -10 to make cursor closer to the text
+      { autoAlpha: 1, duration: 0.6, repeat: -1, ease: SteppedEase.config(1) }
+    )
+    .to(
+      ".description",
+      {
+        text: {
+          value: "I make websites",
+        },
+        duration: 2.3,
       },
-      duration: 2.3,
-    },
-    " < 1"
-  )
-  .from(
-    ".icon-arrow",
-    { opacity: 0 },
+      " < 1"
+    )
+    .from(
+      ".icon-arrow",
+      { opacity: 0 },
 
-    "< 2.8 "
-  );
+      "< 2.8 "
+    );
+}
+runAnimation();
 
 // gsap for about me
 // gsap.registerPlugin(ScrollTrigger);
@@ -78,16 +81,17 @@ function toogle(menuIcon) {
 downloadButton.addEventListener("click", () => {
   window.open("./pictures/leticia-cv.pdf");
 });
+
 // TRANSLATION
 
 translateIcon.forEach((button) => {
   button.addEventListener("click", () => {
     if (myName.innerText === "Letícia") {
-      console.log("Portuguese");
       window.location.href = "index.html";
+      runAnimation();
     } else {
-      console.log("english");
       window.location.href = "pthtml.html";
+      runAnimation();
     }
   });
 });
