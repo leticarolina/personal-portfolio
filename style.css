@@ -167,10 +167,11 @@ a:hover {
   height: 90vh;
 
   box-sizing: border-box;
-  min-height: fit-content;
+  /* min-height: fit-content; */
 }
 
 .section__pic-container {
+  /* overflow: hidden; */
   position: absolute;
   z-index: -1;
   margin-top: 50px;
@@ -225,7 +226,7 @@ a:hover {
 
 #about {
   position: relative;
-  /* height: 100vh; */
+  height: 100vh;
   text-align: center;
 }
 
@@ -546,9 +547,7 @@ a .icon:hover {
   body {
     overflow-x: hidden;
   }
-  #hero {
-    height: 100%;
-  }
+
   #mobile-nav {
     display: flex;
     justify-content: space-between;
@@ -570,7 +569,6 @@ a .icon:hover {
   }
   .about-me-container {
     width: auto;
-    /* justify-content: center; */
   }
 
   .my-picture-container {
@@ -591,9 +589,21 @@ a .icon:hover {
     align-items: center;
     float: none;
   }
+
+  .contact-title h1 {
+    font-size: 30px;
+  }
   .contact-info-container {
     width: auto;
     margin: 10px;
+  }
+
+  .contact-email-container a {
+    font-size: 17px;
+  }
+
+  #navigation-bar-footer a {
+    font-size: 16px;
   }
   .email {
     margin-left: 10px;
