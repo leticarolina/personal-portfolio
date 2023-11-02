@@ -544,10 +544,6 @@ a .icon:hover {
 /* MEDIA QUERY*/
 
 @media screen and (max-width: 480px) {
-  body {
-    overflow: hidden;
-  }
-
   #mobile-nav {
     display: flex;
     justify-content: space-between;
@@ -562,10 +558,6 @@ a .icon:hover {
   }
   .section__pic-container {
     margin-top: 20px;
-  }
-
-  .section__pic-container svg {
-    overflow: hidden;
   }
 
   #about {
