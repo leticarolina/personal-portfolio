@@ -115,20 +115,20 @@ a:hover {
 .menu-links {
   display: none;
   transition: all 0.3 ease-in-out;
-  margin-top: 130px;
+  margin-top: 150px;
 }
 
 .menu-links a {
-  font-size: 16px;
-
+  font-size: 15px;
+  margin-left: 7px;
   text-decoration: none;
   transition: all 200ms ease;
 }
 
 .menu-links img {
-  float: right;
+  /* float: right;
   padding-right: 5px;
-  padding-top: 5px;
+  padding-top: 5px; */
 }
 .menu-links a:hover {
   text-decoration: underline;
@@ -137,7 +137,8 @@ a:hover {
 .menu-links li {
   list-style: none;
   text-align: center;
-  padding: 12px;
+  padding: 8px;
+  margin-left: 14px;
 }
 
 .menu-links.open {
@@ -147,8 +148,10 @@ a:hover {
 }
 
 #close-menu-icon {
+  margin-right: 60px;
   cursor: pointer;
   height: 37px;
+
   width: 37px;
 }
 
@@ -222,7 +225,7 @@ a:hover {
 
 #about {
   position: relative;
-  height: 100vh;
+  /* height: 100vh; */
   text-align: center;
 }
 
@@ -539,40 +542,87 @@ a .icon:hover {
 /* MEDIA QUERY*/
 /* MEDIA QUERY*/
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 480px) {
   body {
     overflow-x: hidden;
+  }
+  #hero {
+    height: 100%;
   }
   #mobile-nav {
     display: flex;
     justify-content: space-between;
   }
   #logo-name {
-    margin-left: 30px;
+    margin-left: 25px;
   }
 
   #desktop-nav,
   .icon-arrow {
     display: none;
   }
+  .section__pic-container {
+    margin-top: 20px;
+  }
 
+  #about {
+    height: max-content;
+  }
   .about-me-container {
-    width: 600px;
+    width: auto;
+    /* justify-content: center; */
   }
 
   .my-picture-container {
     display: none;
   }
+
+  .about-boxes {
+    display: none;
+  }
+  .button {
+    justify-content: center;
+  }
+  .boxes-social-media {
+    width: auto;
+  }
   #social-media {
+    flex-direction: row;
+    align-items: center;
+    float: none;
+  }
+  .contact-info-container {
+    width: auto;
+    margin: 10px;
+  }
+  .email {
+    margin-left: 10px;
+  }
+}
+
+@media screen and (min-width: 481px) and (max-width: 900px) {
+  #hero-section {
+    height: 90vh;
+    align-items: center;
+  }
+
+  .section__pic-container {
+    margin-bottom: 100px;
+  }
+  .icon-arrow {
+    display: none;
+  }
+  #about {
+    height: max-content;
+  }
+  .my-picture-container {
+    margin: 0;
+  }
+  .linkedin,
+  .github {
     margin-left: 30px;
   }
   .about-text-container {
-    margin-left: 15px;
-    margin-right: 15px;
-  }
-  .box-details-container {
-    padding: 10px;
-
-    width: 140px;
+    margin-left: 20px;
   }
 }
