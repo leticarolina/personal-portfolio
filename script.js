@@ -7,6 +7,7 @@ const mobileMenuIcons = document.querySelector("#mobile-menu-icon");
 const translateIcon = document.querySelectorAll(".translate");
 const downloadButton = document.querySelector(".button");
 const myName = document.querySelector(".name");
+const body = document.querySelector("body");
 
 // GSAP
 // GSAP
@@ -42,7 +43,7 @@ function runAnimation() {
       "< 2.8 "
     );
 }
-runAnimation();
+body.onload = runAnimation();
 
 // gsap for about me
 // gsap.registerPlugin(ScrollTrigger);
@@ -88,10 +89,8 @@ translateIcon.forEach((button) => {
   button.addEventListener("click", () => {
     if (myName.innerText === "Letícia") {
       window.location.href = "index.html";
-      runAnimation();
     } else {
       window.location.href = "pthtml.html";
-      runAnimation();
     }
   });
 });

@@ -9,7 +9,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Antonio:wght@700&family=El+Messiri&family=Hind:wght@300;400&family=Sometype+Mono&family=Taviraj:ital,wght@0,300;1,400&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Antonio:wght@700&family=El+Messiri&family=Hind:wght@300;400&family=Taviraj:ital,wght@0,300;1,400&display=swap"
       rel="stylesheet"
     />
     <!-- CSS -->
@@ -87,8 +87,6 @@
     <section id="hero-section">
       <div class="section__pic-container">
         <svg
-          overflow="hidden"
-          class="big-ball"
           width="555"
           height="557"
           viewBox="0 0 555 557"
@@ -108,13 +106,9 @@
           <span id="cursor">|</span>
         </div>
       </div>
-
-      <img
-        src="pictures/arrow.svg"
-        alt="Arrow icon"
-        class="icon-arrow"
-        onclick="location.href='./#about'"
-      />
+      <a href="#about" class="arrow-container"
+        ><img src="pictures/arrow.svg" alt="Arrow icon" class="icon-arrow"
+      /></a>
     </section>
 
     <section id="about">
@@ -163,29 +157,28 @@
           <button class="button">Download my CV</button>
           <div class="about-text-container">
             <p class="bio">
-              My name is Leticia, and I am currently in a career transition with
-              a dedication to studying to become a frontend developer.
-              <br />Since my early 20s, when I was practicing as an architect,
-              the combination of design and technology has always fascinated me.
-              In the end of 2021 I ventured into the technology and blockchain
-              industry, from that point I knew it was time for a change, and as
-              I embarked on this journey to become a web developer, I got driven
-              by the opportunity to maintain a creative mindset as before, but
-              this time towards building applications and experiences to solve
-              problems. <br /><br />My journey is an ongoing exploration of
-              creativity, technology, and purpose-driven development. I'm really
-              focused on realizing my vision and creating a better digital
-              world. When I’m not at the computer, you can find me doing sports,
-              hanging out at the beach, or painting.
+              I'm Leticia, currently in the midst of a career transformation as
+              I dive into the world of frontend development. Back in my early
+              20s, when I was working as an architect, the combination of design
+              and technology always held my fascination. Towards the end of
+              2021, that's when I realized it was time for a new chapter, so I
+              ventured into the technology and blockchain world.
+              <br />After a year, I have embarked on my journey to become a web
+              developer and I was captivated by the possibility of maintaining
+              same creative mindset as my previous profession, but this time
+              towards building digital applications and experiences to solve
+              real-world problems. <br /><br />My journey is an ongoing
+              exploration of creativity, technology, and purpose-driven
+              development. I'm wholeheartedly committed to bringing my vision to
+              life and contributing to a better digital world. When I’m not at
+              the computer, you can find me participating in sports, hanging at
+              the beach, or in a cafe.
             </p>
           </div>
         </div>
-        <img
-          src="pictures/arrow.svg"
-          alt="Arrow icon"
-          class="icon-arrow"
-          onclick="location.href='./#projects'"
-        />
+        <a href="#projects" class="arrow-container"
+          ><img src="pictures/arrow.svg" alt="Arrow icon" class="icon-arrow"
+        /></a>
       </div>
     </section>
     <section id="projects">
@@ -285,7 +278,9 @@
               alt="LinkedIn icon"
               class="icons"
             />
-            <p><a href="https://www.linkedin.com">LinkedIn</a></p>
+            <p>
+              <a href="https://www.linkedin.com/in/leti-azevedo/">LinkedIn</a>
+            </p>
           </div>
         </div>
       </div>

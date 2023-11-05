@@ -33,7 +33,7 @@ nav {
   align-items: center;
 
   justify-content: space-around;
-  font-family: "Taviraj", serif;
+  font-family: "El Messiri", sans-serif;
   height: 10vh;
   width: 100%;
 }
@@ -186,7 +186,6 @@ a:hover {
 .hello {
   font-size: 25px;
   color: #594545;
-  font-family: "Taviraj", serif;
 
   font-weight: 400;
 }
@@ -209,7 +208,7 @@ a:hover {
   font-size: 23px;
   color: #594545;
   letter-spacing: 1px;
-  font-family: "Sometype Mono", monospace;
+  font-family: "El Messiri", sans-serif;
 
   padding-right: 10px;
 }
@@ -354,14 +353,17 @@ a .icon:hover {
   color: #fff8ea;
   border: #af8b8b 0.1rem solid;
 }
+.arrow-container {
+  justify-content: center;
+  position: absolute;
+  bottom: 20px;
+}
 
 .icon-arrow {
-  cursor: pointer;
+  /* cursor: pointer; */
   height: 40px;
-  position: absolute;
-  justify-content: center;
+  /* position: absolute; */
 
-  bottom: 20px;
   transform: scaleY(-1);
 }
 
@@ -544,6 +546,9 @@ a .icon:hover {
 /* MEDIA QUERY*/
 
 @media screen and (max-width: 480px) {
+  body {
+    overflow-x: hidden;
+  }
   #mobile-nav {
     display: flex;
     justify-content: space-between;
@@ -556,8 +561,9 @@ a .icon:hover {
   .icon-arrow {
     display: none;
   }
+
   .section__pic-container {
-    margin-top: 20px;
+    margin-top: 10px;
   }
 
   #about {
@@ -615,9 +621,7 @@ a .icon:hover {
   .section__pic-container {
     margin-bottom: 100px;
   }
-  .icon-arrow {
-    display: none;
-  }
+
   #about {
     height: max-content;
   }
