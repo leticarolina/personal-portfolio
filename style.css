@@ -314,6 +314,10 @@ a:hover {
   padding: 0px 30px 20px;
 }
 
+.highlight {
+  color: #d1aeae;
+  font-style: italic;
+}
 .bio {
   font-size: 16px;
 }
@@ -617,7 +621,9 @@ a .icon:hover {
     height: 90vh;
     align-items: center;
   }
-
+  .second-arrow {
+    display: none;
+  }
   .section__pic-container {
     margin-bottom: 100px;
   }
