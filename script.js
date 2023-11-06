@@ -16,7 +16,7 @@ const body = document.querySelector("body");
 const timeline = gsap.timeline({ defaults: { duration: 1 } });
 function runAnimation() {
   timeline
-    .fromTo(svg, { scale: 0, ease: "bounce" }, { scale: 0.9, ease: "bounce" })
+    .fromTo(svg, { scale: 0 }, { scale: 0.9, ease: "bounce" })
     .from(".hello, .name", {
       duration: 0.5,
       scale: 0,
