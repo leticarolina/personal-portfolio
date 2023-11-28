@@ -174,7 +174,7 @@ a:hover {
   /* overflow: hidden; */
   position: absolute;
   z-index: -1;
-  margin-top: 50px;
+  margin-top: 40px;
 }
 
 .section_texts {
@@ -564,11 +564,22 @@ a .icon:hover {
   .icon-arrow {
     display: none;
   }
-
-  .section__pic-container {
-    margin-top: 10px;
+  .hello,
+  .description {
+    font-size: 18px;
   }
 
+  .name {
+    font-size: 45px;
+  }
+  .section__pic-container {
+    margin-top: 60px;
+  }
+
+  .ballsvg {
+    height: 400px;
+    width: 400px;
+  }
   #about {
     height: max-content;
   }
@@ -616,6 +627,10 @@ a .icon:hover {
 }
 
 @media screen and (min-width: 481px) and (max-width: 900px) {
+  .ballsvg {
+    height: 600px;
+    width: 600px;
+  }
   #hero-section {
     height: 90vh;
     align-items: center;
@@ -639,5 +654,12 @@ a .icon:hover {
   }
   .about-text-container {
     margin-left: 20px;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .ballsvg {
+    height: 600px;
+    width: 600px;
   }
 }
