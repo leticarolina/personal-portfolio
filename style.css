@@ -148,7 +148,7 @@ a:hover {
 }
 
 #close-menu-icon {
-  margin-right: 60px;
+  margin-left: 60px;
   cursor: pointer;
   height: 37px;
 
@@ -186,7 +186,7 @@ a:hover {
   font-size: 25px;
   color: #594545;
 
-  font-weight: 400;
+  font-weight: 600;
 }
 
 .imake {
