@@ -80,7 +80,7 @@ function toogle(menuIcon) {
   gsap.from(menuLinks, { x: 200, duration: 0.8 });
 }
 downloadButton.addEventListener("click", () => {
-  window.open("./pictures/leticia-cv.pdf");
+  window.open("./pictures/resume.pdf");
 });
 
 // TRANSLATION
