@@ -30,7 +30,7 @@ function runAnimation() {
       ".description",
       {
         text: {
-          value: "I make smart contracts",
+          value: "I build smart contracts",
         },
         duration: 2.3,
       },
