@@ -1,96 +1,59 @@
-const menuIcon = document.querySelector("#menu-icon");
-const closeMenu = document.querySelector("#close-menu-icon");
-const menuLinks = document.querySelector(".menu-links");
-const svg = document.querySelector("svg");
 const heroSection = document.querySelector("#hero-section");
-const mobileMenuIcons = document.querySelector("#mobile-menu-icon");
 const translateIcon = document.querySelectorAll(".translate");
-const downloadButton = document.querySelector(".button");
+const downloadButton = document.querySelector(".button-cv");
 const myName = document.querySelector(".name");
 const body = document.querySelector("body");
 
-// GSAP
-// GSAP
-// GSAP
+const tl = gsap.timeline({ defaults: { duration: 1, ease: "power3.out" } });
 
-const timeline = gsap.timeline({ defaults: { duration: 1 } });
 function runAnimation() {
-  timeline
-    .fromTo(svg, { scale: 0 }, { scale: 0.9, ease: "bounce" })
-    .from(".hello, .name", {
-      duration: 0.5,
-      scale: 0,
-    })
+  tl
+    // name + hello pop
+    .from(".hello, .name", { scale: 0, duration: 0.9, ease: "bounce" })
+
+    // blinking cursor
     .fromTo(
       "#cursor",
-      { autoAlpha: 0, x: -12 }, // x: -10 to make cursor closer to the text
-      { autoAlpha: 1, duration: 0.6, repeat: -1, ease: SteppedEase.config(1) }
+      { autoAlpha: 0, x: -12 },
+      { autoAlpha: 1, duration: 0.8, repeat: -1, ease: SteppedEase.config(1) },
+      "<" // start at the same time as the name pop, keep blinking forever
     )
-    .to(
-      ".description",
-      {
-        text: {
-          value: "I build smart contracts",
-        },
-        duration: 2.3,
-      },
-      " < 1"
-    )
-    .from(
-      ".icon-arrow",
-      { opacity: 0 },
 
-      "< 2.8 "
+    // type “Web3 Developer”
+    .to(".description", {
+      text: { value: "Web3 Developer" },
+      duration: 2.0,
+    })
+
+    // label right after typing
+    .add("afterType")
+
+    // reveal flowers (left then right, staggered a bit)
+    .fromTo(
+      ".hero-flower-left",
+      { autoAlpha: 0, x: "-24px" },
+      { autoAlpha: 1, x: "0px", duration: 0.8 },
+      "afterType+=0"
+    )
+    .fromTo(
+      ".hero-flower-right",
+      { autoAlpha: 0, x: "24px" },
+      { autoAlpha: 1, x: "0px", duration: 0.8 },
+      "afterType+=0.1"
     );
 }
-body.onload = runAnimation();
+body.onload = runAnimation;
 
-// gsap for about me
-// gsap.registerPlugin(ScrollTrigger);
-
-// gsap.from(".my-picture-container", {
-//   x: -800,
-//   duration: 2,
-//   ScrollTrigger: ".my-picture-container",
-// });
-
-// gsap.from(".about-me-container", {
-//   x: 1000,
-//   duration: 2,
-//   ScrollTrigger: "#about",
-// });
-
-// JS
-// JS
-// JS
-
-menuIcon.addEventListener("click", () => {
-  mobileMenuIcons.classList.add("hidden");
-  toogle(menuIcon);
+// Download CV
+downloadButton?.addEventListener("click", () => {
+  window.open("./pictures/resume.pdf", "_blank", "noopener,noreferrer");
 });
 
-closeMenu.addEventListener("click", () => {
-  menuLinks.classList.remove("open");
-
-  mobileMenuIcons.classList.remove("hidden");
-});
-
-function toogle(menuIcon) {
-  menuLinks.classList.add("open");
-  gsap.from(menuLinks, { x: 200, duration: 0.8 });
-}
-downloadButton.addEventListener("click", () => {
-  window.open("./pictures/resume.pdf");
-});
-
-// TRANSLATION
-
-translateIcon.forEach((button) => {
-  button.addEventListener("click", () => {
-    if (myName.innerText === "Letícia") {
-      window.location.href = "index.html";
-    } else {
-      window.location.href = "pthtml.html";
-    }
+// Translation toggle
+translateIcon.forEach((btn) => {
+  btn.addEventListener("click", () => {
+    const lang = (document.documentElement.lang || "").toLowerCase();
+    const isPT = lang.startsWith("pt");
+    window.location.href = isPT ? "index.html" : "pthtml.html";
   });
 });

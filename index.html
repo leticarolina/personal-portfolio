@@ -15,10 +15,10 @@
     <!-- CSS -->
     <link rel="stylesheet" href="style.css" />
     <!-- GSAP -->
-    <script
+    <!-- <script
       defer
       src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"
-    ></script>
+    ></script> -->
 
     <script
       defer
@@ -30,402 +30,620 @@
     <!-- JAVASCRIPT -->
     <script src="script.js" defer></script>
     <link rel="icon" href="pictures/header.png" type="image" />
-    <!-- <style>
-      * {
-        outline: 1px solid red !important;
-        opacity: 1 !important;
-        visibility: visible !important;
-      }
-    </style> -->
   </head>
-  <body>
-    <nav id="desktop-nav">
-      <div id="logo-name" class="myname">Leticia Azevedo</div>
+
+  <body class="bg-[#594545] text-[#FFF8EA]">
+    <nav
+      id="desktop-nav"
+      class="hidden md:flex items-center justify-around h-[10vh] w-full font-['El_Messiri'] bg-transparent text-[#FFF8EA]"
+    >
+      <div
+        id="logo-name"
+        class="text-[19px] cursor-default hover:text-[#AF8B8B] transition-colors"
+      >
+        Leticia Azevedo
+      </div>
+
       <div>
-        <ul id="navigation-bar">
-          <li><a href="#about">About me</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#contact-me">Contact me</a></li>
+        <ul id="navigation-bar" class="flex items-center space-x-4 mr-20">
+          <li>
+            <a
+              href="#about"
+              class="text-[18px] hover:underline underline-offset-[10px]"
+              >About me</a
+            >
+          </li>
+          <li>
+            <a
+              href="#projects"
+              class="text-[18px] hover:underline underline-offset-[10px]"
+              >Projects</a
+            >
+          </li>
+          <li>
+            <a
+              href="#contact-me"
+              class="text-[18px] hover:underline underline-offset-[10px]"
+              >Contact me</a
+            >
+          </li>
         </ul>
       </div>
-      <div class="translate">
+
+      <div class="translate bg-transparent border-0">
         <img
           src="pictures/translate-26.svg"
           alt="Arrow icon"
           id="translate-menu-icon"
+          class="h-[30px] w-[30px] hover:scale-110 transition-transform"
         />
       </div>
     </nav>
 
-    <nav id="mobile-nav">
-      <div id="logo-name">Leticia Azevedo</div>
-      <div class="mobile-menu">
-        <div id="mobile-menu-icon">
-          <div>
-            <img
-              src="pictures/menuopened.svg"
-              alt="Arrow icon"
-              id="menu-icon"
-            />
-          </div>
-          <div class="translate">
-            <img
-              src="pictures/translate-26.svg"
-              alt="Arrow icon"
-              id="translate-menu-icon"
-            />
-          </div>
-        </div>
-        <!-- </div> -->
-        <div class="menu-links">
-          <li><a href="#about">About me</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#contact-me">Contact me</a></li>
-          <li>
-            <img
-              src="pictures/menuclosed.svg"
-              alt="Close Menu"
-              id="close-menu-icon"
-            />
-          </li>
-        </div>
-      </div>
-    </nav>
-
-    <section id="hero-section">
-      <div class="section__pic-container">
-        <!--  width="555"
-          height="555" -->
-        <svg
-          class="ballsvg"
-          viewBox="0 0 555 557"
-          fill="none"
-          xmlns="http://www.w3.org/2000/svg"
+    <nav
+      id="mobile-nav"
+      class="md:hidden flex items-center h-[10vh] w-full px-4"
+    >
+      <!-- Left: tiny logo/initials (acts as spacer on small screens too) -->
+      <div class="w-16">
+        <span
+          id="logo-name"
+          class="font-['El_Messiri'] text-[19px] text-[#FFF8EA]"
+          >LA</span
         >
-          <ellipse cx="277.5" cy="278.5" rx="277.5" ry="278.5" fill="#FFF8EA" />
-        </svg>
       </div>
+
+      <!-- Center: two links -->
+      <ul
+        class="flex items-center gap-8 mx-auto text-[#FFF8EA] font-['El_Messiri']"
+      >
+        <li>
+          <a
+            href="#projects"
+            class="text-[16px] hover:underline underline-offset-4"
+            >Projects</a
+          >
+        </li>
+        <li>
+          <a
+            href="#about"
+            class="text-[16px] hover:underline underline-offset-4"
+            >About me</a
+          >
+        </li>
+      </ul>
+
+      <!-- Right: translate -->
+      <button class="w-16 flex justify-end translate">
+        <img
+          src="pictures/translate-26.svg"
+          alt="Translate"
+          id="translate-menu-icon"
+          class="h-[28px] w-[28px] hover:scale-110 transition-transform"
+        />
+      </button>
+    </nav>
+    <!---------------------------- HERO ---------------------- -->
+    <!---------------------------- HERO ---------------------- -->
+
+    <section
+      id="hero-section"
+      class="relative flex justify-center items-center h-[90vh] text-center"
+    >
       <div class="section_texts">
-        <p lang="en" class="hello">Hello, I'm</p>
-        <h1 class="name">Leticia</h1>
+        <!-- Left flower -->
 
-        <div class="imake">
-          <p class="description"></p>
+        <img
+          src="pictures/flower.svg"
+          alt=""
+          aria-hidden="true"
+          class="hero-flower-left pointer-events-none select-none absolute top-1/2 -translate-y-1/2 -left-[55%] md:-left-[40%] lg:-left-[15%] md:h-[80vh] w-auto -z-10 opacity-0"
+        />
 
-          <span id="cursor">|</span>
+        <img
+          src="pictures/flower.svg"
+          alt=""
+          aria-hidden="true"
+          class="hero-flower-right pointer-events-none select-none absolute top-1/2 -translate-y-1/2 -right-[55%] md:-right-[40%] lg:-right-[15%] md:h-[80vh] w-auto -z-10 [transform:scaleX(-1)] opacity-0"
+        />
+
+        <p lang="en" class="hello text-lg md:text-2xl font-medium">
+          Hello, I'm
+        </p>
+        <h1
+          class="name text-6xl md:text-8xl font-extrabold text-[#9E7676] mt-4"
+        >
+          Leticia
+        </h1>
+        <h1
+          class="name text-6xl md:text-8xl font-extrabold text-[#9E7676] mb-4"
+        >
+          Azevedo
+        </h1>
+
+        <div class="imake flex items-baseline justify-center gap-1 mt-3">
+          <p class="description text-base md:text-xl"></p>
+          <span id="cursor" class="text-base md:text-lg ml-2">|</span>
+        </div>
+
+        <!-- Buttons (same style as your .button) -->
+        <div class="flex flex-col items-center gap-3 mt-20">
+          <a
+            href="https://github.com/leticarolina"
+            target="_blank"
+            rel="noreferrer"
+            class="rounded-md button inline-flex items-center gap-2 w-32 py-2 justify-center border border-[#AF8B8B] font-light hover:bg-white/10 transition"
+          >
+            <img src="pictures/github.svg" alt="GitHub" class="h-7 w-7" />
+            <span>GitHub</span>
+          </a>
+
+          <a
+            href="https://www.linkedin.com/in/leti-azevedo/"
+            target="_blank"
+            rel="noreferrer"
+            class="rounded-md button inline-flex items-center gap-2 w-32 py-2 justify-center border border-[#AF8B8B] font-light hover:bg-white/10 transition"
+          >
+            <img src="pictures/linkedin.svg" alt="LinkedIn" class="h-7 w-7" />
+            <span>LinkedIn</span>
+          </a>
         </div>
       </div>
-      <a href="#about" class="arrow-container"
-        ><img src="pictures/arrow.svg" alt="Arrow icon" class="icon-arrow"
-      /></a>
+
+      <a
+        href="#projects"
+        class="arrow-container absolute bottom-5 left-1/2 -translate-x-1/2"
+      >
+        <img
+          src="pictures/arrow.svg"
+          alt="Arrow icon"
+          class="rotate-180 h-8 w-8 text-[#9E7676]"
+        />
+      </a>
     </section>
 
-    <section id="about">
-      <div class="section-container">
-        <!-- <div class="my-picture-container">
+    <!-------------PROJECTS SECTION ------------>
+    <section id="projects" class="grid place-items-center mb-12">
+      <!-- Title -->
+      <div class="project-title text-center pt-20 pb-10">
+        <p class="pretitle text-[16px] text-[#AF8B8B] font-['Taviraj',serif]">
+          Explore my
+        </p>
+        <h1 class="title text-[38px] font-['Taviraj',serif] font-bold">
+          Projects
+        </h1>
+      </div>
+
+      <!-- Cards grid -->
+      <div
+        class="projects-container flex justify-center flex-wrap px-4 py-5 w-full"
+      >
+        <!-- Card -->
+        <div
+          class="card transition-all duration-200 w-[280px] h-[410px] m-5 p-2 border border-[#FFF8EA] hover:-translate-y-4 shadow-[0_8px_12px_rgba(255,248,234,0.35),0_6px_6px_rgba(255,248,234,0.25)] hover:shadow-[0_18px_28px_rgba(255,248,234,0.6),0_12px_14px_rgba(255,248,234,0.5)]"
+        >
+          <div
+            class="pt-2 flex flex-col h-[380px] justify-between items-center text-center"
+          >
+            <!-- Title block -->
+            <div
+              class="w-[250px] h-[160px] border border-[#9E7676] flex items-center justify-center"
+            >
+              <span
+                class="text-left font-['Antonio',sans-serif] font-bold text-[55px] tracking-[1px] leading-none"
+                >Fund Me Portal</span
+              >
+            </div>
+            <p
+              class="px-3 font-light text-left text-[14px] pb-2 mt-2 font-['El_Messiri']"
+            >
+              The first smart contract I deployed while shaping my path in Web3.
+              It’s a funding portal where anyone can send ETH directly. Try it
+              out and support my journey by funding this contract.
+            </p>
+
+            <div class="flex gap-4 justify-center mt-2">
+              <a
+                href="https://fundme-contract.vercel.app/"
+                target="_blank"
+                class="px-4 py-2 min-w-[90px] rounded-md bg-[#594545] text-[#FFF8EA] text-sm font-medium border border-[#FFF8EA] hover:bg-white/20 transition text-center"
+              >
+                Live
+              </a>
+              <a
+                href="https://github.com/leticarolina/fundme-contract"
+                target="_blank"
+                class="px-4 py-2 min-w-[90px] rounded-md bg-[#594545] text-[#FFF8EA] text-sm font-medium border border-[#FFF8EA] hover:bg-white/20 transition text-center"
+              >
+                Github
+              </a>
+            </div>
+
+            <!-- Tags -->
+            <div class="flex justify-center gap-2 mt-4">
+              <span
+                class="bg-[rgba(255,248,234,0.2)] text-[#FFF8EA] px-2 py-[2px] text-[11px] uppercase font-medium rounded-sm"
+              >
+                Solidity
+              </span>
+              <span
+                class="bg-[rgba(255,248,234,0.2)] text-[#FFF8EA] px-2 py-[2px] text-[11px] uppercase font-medium rounded-sm"
+              >
+                Foundry
+              </span>
+              <span
+                class="bg-[rgba(255,248,234,0.2)] text-[#FFF8EA] px-2 py-[2px] text-[11px] uppercase font-medium rounded-sm"
+              >
+                React.js
+              </span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card -->
+        <div
+          class="card transition-all duration-200 w-[280px] h-[410px] m-5 p-2 border border-[#FFF8EA] hover:-translate-y-4 shadow-[0_8px_12px_rgba(255,248,234,0.35),0_6px_6px_rgba(255,248,234,0.25)] hover:shadow-[0_18px_28px_rgba(255,248,234,0.6),0_12px_14px_rgba(255,248,234,0.5)]"
+        >
+          <div
+            class="pt-2 flex flex-col h-[380px] justify-between items-center text-center"
+          >
+            <!-- Title block -->
+            <div
+              class="w-[250px] h-[160px] border border-[#9E7676] flex items-center justify-center"
+            >
+              <span
+                class="text-left font-['Antonio',sans-serif] font-bold text-[55px] tracking-[1px] leading-none"
+                >Web3 Raffle</span
+              >
+            </div>
+            <p
+              class="px-3 font-light text-left text-[14px] pb-2 font-['El_Messiri']"
+            >
+              A decentralized and automated raffle system running by Smart
+              Contract, built with Solidity and integrated with Chainlink.
+            </p>
+
+            <div class="flex gap-4 justify-center mt-2">
+              <a
+                href="https://raffle-d-app.vercel.app/"
+                target="_blank"
+                class="px-4 py-2 min-w-[90px] rounded-md bg-[#594545] text-[#FFF8EA] text-sm font-medium border border-[#FFF8EA] hover:bg-white/20 transition text-center"
+              >
+                Live
+              </a>
+              <a
+                href="https://github.com/leticarolina/Raffle-dApp"
+                target="_blank"
+                class="px-4 py-2 min-w-[90px] rounded-md bg-[#594545] text-[#FFF8EA] text-sm font-medium border border-[#FFF8EA] hover:bg-white/20 transition text-center"
+              >
+                Github
+              </a>
+            </div>
+
+            <!-- Tags -->
+            <div class="flex justify-center gap-2 mt-4">
+              <span
+                class="bg-[rgba(255,248,234,0.2)] text-[#FFF8EA] px-2 py-[2px] text-[11px] uppercase font-medium rounded-sm"
+              >
+                Solidity
+              </span>
+              <span
+                class="bg-[rgba(255,248,234,0.2)] text-[#FFF8EA] px-2 py-[2px] text-[11px] uppercase font-medium rounded-sm"
+              >
+                Foundry
+              </span>
+              <span
+                class="bg-[rgba(255,248,234,0.2)] text-[#FFF8EA] px-2 py-[2px] text-[11px] uppercase font-medium rounded-sm"
+              >
+                React.js
+              </span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card -->
+        <div
+          class="card transition-all duration-200 w-[280px] h-[410px] m-5 p-2 border border-[#FFF8EA] hover:-translate-y-4 shadow-[0_8px_12px_rgba(255,248,234,0.35),0_6px_6px_rgba(255,248,234,0.25)] hover:shadow-[0_18px_28px_rgba(255,248,234,0.6),0_12px_14px_rgba(255,248,234,0.5)]"
+        >
+          <div
+            class="pt-2 flex flex-col h-[380px] justify-between items-center text-center"
+          >
+            <!-- Title block -->
+            <div
+              class="w-[250px] h-[160px] border border-[#9E7676] flex items-center justify-center"
+            >
+              <span
+                class="text-left font-['Antonio',sans-serif] font-bold text-[55px] tracking-[1px] leading-none"
+                >Blockchain Finder</span
+              >
+            </div>
+            <p
+              class="px-3 font-light text-left text-[14px] pb-2 font-['El_Messiri']"
+            >
+              Project created during my job as a Transaction Auditor to
+              facilitate finding the relevant network of a given txID or deposit
+              address.
+            </p>
+
+            <div class="flex gap-4 justify-center mt-2">
+              <a
+                href="https://blockchainfinder.site"
+                target="_blank"
+                class="px-4 py-2 min-w-[90px] rounded-md bg-[#594545] text-[#FFF8EA] text-sm font-medium border border-[#FFF8EA] hover:bg-white/20 transition text-center"
+              >
+                Live
+              </a>
+              <a
+                href="https://github.com/leticarolina/crypto-return"
+                target="_blank"
+                class="px-4 py-2 min-w-[90px] rounded-md bg-[#594545] text-[#FFF8EA] text-sm font-medium border border-[#FFF8EA] hover:bg-white/20 transition text-center"
+              >
+                Github
+              </a>
+            </div>
+
+            <!-- Tags -->
+            <div class="flex justify-center gap-2 mt-4">
+              <span
+                class="bg-[rgba(255,248,234,0.2)] text-[#FFF8EA] px-2 py-[2px] text-[11px] uppercase font-medium rounded-sm"
+              >
+                Frontend
+              </span>
+              <span
+                class="bg-[rgba(255,248,234,0.2)] text-[#FFF8EA] px-2 py-[2px] text-[11px] uppercase font-medium rounded-sm"
+              >
+                React/Next.js
+              </span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Coming soon (disabled) -->
+
+        <div
+          class="card transition-all duration-200 w-[280px] h-[410px] m-5 p-2 border border-[#FFF8EA] hover:-translate-y-4 shadow-[0_8px_12px_rgba(255,248,234,0.35),0_6px_6px_rgba(255,248,234,0.25)] hover:shadow-[0_18px_28px_rgba(255,248,234,0.6),0_12px_14px_rgba(255,248,234,0.5)]"
+        >
+          <div
+            class="pt-2 flex flex-col h-[380px] justify-between items-center text-center"
+          >
+            <!-- Title block -->
+            <div
+              class="w-[250px] h-[160px] border border-[#9E7676] flex items-center justify-center"
+            >
+              <span
+                class="text-left font-['Antonio',sans-serif] font-bold text-[55px] tracking-[1px] leading-none"
+                >DeFi Stablecoin</span
+              >
+            </div>
+            <p
+              class="px-3 font-light text-left text-[16px] pb-2 font-['El_Messiri']"
+            >
+              Coming soon… currently developing.
+            </p>
+            <div class="flex gap-4 justify-center mt-2">
+              <!-- Disabled Live -->
+              <span
+                class="px-4 py-2 min-w-[90px] rounded-md bg-gray-300/40 text-white text-sm font-medium border border-gray-400/50 cursor-not-allowed text-center"
+              >
+                Live
+              </span>
+
+              <a
+                href="https://github.com/leticarolina/defi-stablecoin"
+                target="_blank"
+                class="px-4 py-2 min-w-[90px] rounded-md bg-[#594545] text-[#FFF8EA] text-sm font-medium border border-[#FFF8EA] hover:bg-white/20 transition text-center"
+              >
+                Github
+              </a>
+            </div>
+
+            <!-- Tags -->
+            <div class="flex justify-center gap-2 mt-4">
+              <span
+                class="bg-[rgba(255,248,234,0.2)] text-[#FFF8EA] px-2 py-[2px] text-[11px] uppercase font-medium rounded-sm"
+              >
+                Solidity
+              </span>
+              <span
+                class="bg-[rgba(255,248,234,0.2)] text-[#FFF8EA] px-2 py-[2px] text-[11px] uppercase font-medium rounded-sm"
+              >
+                Foundry
+              </span>
+              <span
+                class="bg-[rgba(255,248,234,0.2)] text-[#FFF8EA] px-2 py-[2px] text-[11px] uppercase font-medium rounded-sm"
+              >
+                React.js
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <a href="#about" class="bottom-5 left-1/2 -translate-x-1/2 mt-5">
+        <img
+          src="pictures/arrow.svg"
+          alt="Arrow icon"
+          class="rotate-180 h-8 w-8 text-[#9E7676]"
+        />
+      </a>
+    </section>
+
+    <!-- ABOUT ME -->
+    <section id="about" class="relative py-16">
+      <div
+        class="section-container max-w-5xl mx-auto px-6 md:flex md:items-start md:gap-10"
+      >
+        <!-- Photo -->
+        <div class="my-picture-container hidden md:block shrink-0">
           <img
-            class="my-picture"
+            class="my-picture h-[500px] w-[260px] object-cover border border-[#FFF8EA]/60"
             src="pictures/mypic.jpg"
             alt="Picture of Leticia"
           />
-        </div> -->
-        <div class="about-me-container">
-          <div class="about-title">
-            <p class="pretitle">Get To Know</p>
-            <h1 class="title">About Me</h1>
+        </div>
+
+        <!-- Text + boxes -->
+        <div class="about-me-container flex-1">
+          <div class="about-title text-center md:text-left mb-8">
+            <p
+              class="pretitle text-[16px] text-[#AF8B8B] font-['Taviraj',serif]"
+            >
+              Get To Know
+            </p>
+            <h1 class="title text-[35px] font-['Taviraj',serif] font-bold">
+              About Me
+            </h1>
           </div>
 
-          <div class="boxes-social-media">
-            <div id="social-media">
-              <a
-                href="https://www.linkedin.com/in/leti-azevedo/"
-                target="_blank"
-                ><img
-                  src="pictures/linkedin.svg"
-                  alt="LinkedIn profile"
-                  class="icon linkedin"
-              /></a>
-              <a href="https://github.com/leticarolina" target="_blank">
-                <img
-                  src="pictures/github.svg"
-                  alt="Github page"
-                  class="icon github"
-              /></a>
-            </div>
-            <div class="about-boxes">
-              <div class="box-details-container">
-                <h3>Experience</h3>
-                <p>3 years in <br />DeFi and Blockchain</p>
+          <!-- Boxes -->
+          <div class="boxes-social-media flex flex-col gap-4 mb-6">
+            <div class="about-boxes grid grid-cols-1 sm:grid-cols-2 gap-4">
+              <!-- Experience -->
+              <div class="box-details-container border border-[#9E7676] p-4">
+                <h3 class="text-lg font-semibold mb-1 text-[#AF8B8B]">
+                  Experience
+                </h3>
+                <p class="text-sm leading-snug">
+                  3+ years in <br />DeFi, Crypto, & Blockchain
+                </p>
               </div>
-              <div class="box-details-container">
-                <h3>Main Skills</h3>
-                <p>Solidity / Foundry<br />Javascript / React.js</p>
+              <!-- Main Skills -->
+              <div class="box-details-container border border-[#9E7676] p-4">
+                <h3 class="text-lg font-semibold mb-1 text-[#AF8B8B]">
+                  Skills
+                </h3>
+                <p class="text-sm leading-snug">
+                  Solidity / Foundry<br />JavaScript / React / Tailwind
+                </p>
+              </div>
+            </div>
+
+            <!-- Extra skills row -->
+            <div class="about-boxes grid grid-cols-1 sm:grid-cols-3 gap-4">
+              <div class="box-details-container border border-[#9E7676] p-4">
+                <h3 class="text-lg font-semibold mb-1 text-[#AF8B8B]">
+                  Web3 Frontend
+                </h3>
+                <p class="text-sm leading-snug">ethers.js, wagmi, wallet UX</p>
+              </div>
+              <div class="box-details-container border border-[#9E7676] p-4">
+                <h3 class="text-lg font-semibold mb-1 text-[#AF8B8B]">
+                  Smart Contracts
+                </h3>
+                <p class="text-sm leading-snug">testing, gas, security first</p>
+              </div>
+              <div class="box-details-container border border-[#9E7676] p-4">
+                <h3 class="text-lg font-semibold mb-1 text-[#AF8B8B]">
+                  Chainlink Oracles
+                </h3>
+                <p class="text-sm leading-snug">Keepers, Data Feeds, VRF</p>
               </div>
             </div>
           </div>
-          <button class="button">Download my CV</button>
-          <div class="about-text-container">
-            <p class="bio">
-              Hi, I'm Letícia. I’m currently shaping my career as a
-              <span class="highlight">smart contract developer</span> with a
-              passion for bringing ideas to life through code. In late 2021, I
-              decided to dive into the world of
-              <span class="highlight">blockchain</span> and
-              <span class="highlight">web3</span>, discovering a new path where
-              technology and creativity come together to solve real-world
-              challenges. <br />Now, I’m focused on mastering smart contracts
-              and decentralized applications, always striving to build
-              innovative and impactful digital solutions. <br /><br />
-              I'm deeply committed to creating secure, scalable solutions that
-              make a difference. Outside of coding, you’ll find me staying
-              active, exploring new places, or enjoying coffee at a cozy cafe.
+
+          <!-- Bio -->
+          <div class="about-text-container max-w-2xl mb-4">
+            <p class="bio text-[16px] leading-relaxed">
+              I’m Letícia, a web3 Developer focused on
+              <span class="highlight text-[#D1AEAE]">smart contracts</span>.
+              Since 2021 I’ve been working with
+              <span class="highlight text-[#D1AEAE]">blockchain</span> and
+              <span class="highlight text-[#D1AEAE]">Crypto</span>. I enjoy the
+              full loop: designing contract architecture, writing thorough
+              tests, and shipping a responsive, accessible UI that feels good to
+              use. <br />
+              Recently I’ve been sharpening gas-efficient Solidity patterns,
+              solid Foundry test suites, and wallet flows on the frontend. When
+              I’m not coding, I’m probably exploring a new café, at the beach or
+              playing Tennis.
             </p>
           </div>
-        </div>
-        <a href="#projects" class="arrow-container"
-          ><img
-            src="pictures/arrow.svg"
-            alt="Arrow icon"
-            class="icon-arrow second-arrow"
-        /></a>
-      </div>
-    </section>
-    <section id="projects">
-      <div class="project-title">
-        <p class="pretitle">Explore my</p>
-        <h1 class="title">Projects</h1>
-      </div>
 
-      <div class="projects-container">
-        <div class="card">
-          <div class="all-card-content">
-            <div class="card-title">
-              <span>Quote Generator</span>
-            </div>
-            <p class="project-description">
-              First project developed with implementation of Javascript code and
-              a local API.
-            </p>
-
-            <div class="button-container-project">
-              <a
-                class="project-link"
-                href="https://leticarolina.github.io/quote-generator/"
-                target="_blank"
-                ><div>Live</div></a
-              >
-              <a
-                class="project-link"
-                href="https://github.com/leticarolina/quote-generator"
-                target="_blank"
-                ><div>Github</div></a
-              >
-            </div>
-
-            <div class="project-tags">
-              <div class="tag">HTML</div>
-              <div class="tag">CSS</div>
-              <div class="tag">Javascript</div>
-            </div>
-          </div>
-        </div>
-
-        <div class="card">
-          <div class="all-card-content">
-            <div class="card-title">
-              <span>Infinity Scroll</span>
-            </div>
-            <p class="project-description">
-              This page is a compilation of high quality pictures from Unsplash
-              API that will never stop scrolling.
-            </p>
-
-            <div class="button-container-project">
-              <a
-                class="project-link"
-                href="https://leticarolina.github.io/Infinity-scroll/"
-                target="_blank"
-                ><div>Live</div></a
-              >
-              <a
-                class="project-link"
-                href="https://github.com/leticarolina/Infinity-scroll"
-                target="_blank"
-                ><div>Github</div></a
-              >
-            </div>
-
-            <div class="project-tags">
-              <div class="tag">HTML</div>
-              <div class="tag">CSS</div>
-              <div class="tag">Javascript</div>
-            </div>
-          </div>
-        </div>
-
-        <div class="card">
-          <div class="all-card-content">
-            <div class="card-title">
-              <span>Join Party Form</span>
-            </div>
-            <p class="project-description">
-              Form created to implement and test some Bootstrap styles.
-            </p>
-
-            <div class="button-container-project">
-              <a
-                class="project-link"
-                href="https://leticarolina.github.io/party-form/"
-                target="_blank"
-                ><div>Live</div></a
-              >
-              <a
-                class="project-link"
-                href="https://github.com/leticarolina/party-form"
-                target="_blank"
-                ><div>Github</div></a
-              >
-            </div>
-
-            <div class="project-tags">
-              <div class="tag">HTML</div>
-              <div class="tag">Bootstrap</div>
-              <div class="tag">Javascript</div>
-            </div>
-          </div>
-        </div>
-
-        <div class="card">
-          <div class="all-card-content">
-            <div class="card-title">
-              <span>Blockchain Finder</span>
-            </div>
-            <p class="project-description">
-              Project created to facilitate finding the relevant network of a
-              given txID or deposit address.
-            </p>
-
-            <div class="button-container-project">
-              <a
-                class="project-link"
-                href="https://blockchainfinder.site"
-                target="_blank"
-                ><div>Live</div></a
-              >
-              <a
-                class="project-link"
-                href="https://github.com/leticarolina/crypto-return"
-                target="_blank"
-                ><div>Github</div></a
-              >
-            </div>
-
-            <div class="project-tags">
-              <div class="tag">WEB3</div>
-              <div class="tag">REACT.JS</div>
-              <!-- <div class="tag">React.js</div> -->
-            </div>
-          </div>
-        </div>
-
-        <div class="card">
-          <div class="all-card-content">
-            <div class="card-title">
-              <span>Fund Me Contract</span>
-            </div>
-            <p class="project-description">
-              Smart contract deployed on Sepolia testnet to connect wallet and
-              send ETH funds.
-            </p>
-
-            <div class="button-container-project">
-              <a
-                class="project-link"
-                href="https://fundme-contract.vercel.app/"
-                target="_blank"
-                ><div>Live</div></a
-              >
-              <a
-                class="project-link"
-                href="https://github.com/leticarolina/fundme-contract"
-                target="_blank"
-                ><div>Github</div></a
-              >
-            </div>
-
-            <div class="project-tags">
-              <div class="tag">Web3</div>
-              <div class="tag">Foundry</div>
-              <div class="tag">React.js</div>
-            </div>
-          </div>
-        </div>
-
-        <!-- coming soon card -->
-        <div class="card unavailable">
-          <div class="all-card-content">
-            <div class="card-title">
-              <span>Raffle Contract</span>
-            </div>
-            <p class="project-description">Coming soon...</p>
-
-            <div class="button-container-project">
-              <a class="project-link unavailable" target="_blank"
-                ><div>Live</div></a
-              >
-              <a class="project-link unavailable" target="_blank"
-                ><div>Github</div></a
-              >
-            </div>
-
-            <div class="project-tags">
-              <div class="tag">Web3</div>
-              <div class="tag">Foundry</div>
-              <div class="tag">React.js</div>
-            </div>
+          <!-- CV button -->
+          <div class="mt-6">
+            <button
+              class="rounded-md button-cv w-44 border border-[#AF8B8B] text-[#AF8B8B] hover:bg-white/10 px-4 py-2"
+            >
+              Download my CV
+            </button>
           </div>
         </div>
       </div>
     </section>
 
-    <footer id="contact-me">
-      <div class="contact">
-        <div class="contact-title">
-          <p class="pretitle">Get in touch</p>
-          <h1 class="title">Contact me <menu></menu></h1>
+    <footer id="contact-me" class="mt-16 bg-[#815B5B] text-[#FFF8EA]">
+      <div class="contact max-w-5xl mx-auto px-6 py-10">
+        <div class="contact-title text-center mb-6">
+          <p class="pretitle text-[16px] text-[#AF8B8B] font-['Taviraj',serif]">
+            Get in touch
+          </p>
+          <h1 class="title text-[32px] font-['Taviraj',serif]">Contact me</h1>
         </div>
-        <div class="contact-info-container">
-          <div class="contact-email-container">
+
+        <!-- Contact rows -->
+        <div
+          class="contact-info-container max-w-xl mx-auto flex flex-col sm:flex-row items-center justify-center gap-6 border border-[#AE8D8D] p-3"
+        >
+          <div class="contact-email-container inline-flex items-center gap-3">
             <img
               src="pictures/email.svg"
               alt="Email icon"
-              class="icons email"
+              class="icons h-[45px]"
             />
-            <p><a href="mailto:leticiac@email.com">Leticiac@email.com</a></p>
+            <p>
+              <a
+                href="mailto:leticiac@email.com"
+                class="hover:underline underline-offset-4"
+                >Leticiac@email.com</a
+              >
+            </p>
           </div>
-          <div class="contact-email-container">
+          <div class="contact-email-container inline-flex items-center gap-3">
             <img
               src="pictures/linkedin.svg"
               alt="LinkedIn icon"
-              class="icons"
+              class="icons h-[42px]"
             />
             <p>
-              <a href="https://www.linkedin.com/in/leti-azevedo/">LinkedIn</a>
+              <a
+                href="https://www.linkedin.com/in/leti-azevedo/"
+                target="_blank"
+                class="hover:underline underline-offset-4"
+                >LinkedIn</a
+              >
             </p>
           </div>
         </div>
-      </div>
 
-      <nav>
-        <div class="footer-nav">
-          <ul id="navigation-bar-footer">
-            <li><a href="#desktop-nav">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#projects">Projects</a></li>
-          </ul>
-        </div>
-      </nav>
-      <p class="copyright">Copyright &#169; 2023 Leticia Azevedo.</p>
+        <!-- Footer nav -->
+        <nav class="mt-8">
+          <div class="footer-nav flex justify-center">
+            <ul id="navigation-bar-footer" class="flex gap-6">
+              <li>
+                <a
+                  href="#desktop-nav"
+                  class="hover:underline underline-offset-4"
+                  >Home</a
+                >
+              </li>
+              <li>
+                <a href="#about" class="hover:underline underline-offset-4"
+                  >About</a
+                >
+              </li>
+              <li>
+                <a href="#projects" class="hover:underline underline-offset-4"
+                  >Projects</a
+                >
+              </li>
+            </ul>
+          </div>
+        </nav>
+
+        <p class="copyright text-center text-[#AF8B8B] mt-6">
+          © 2025 Leticia Azevedo. All rights reserved.
+        </p>
+      </div>
     </footer>
   </body>
 </html>
