@@ -22,7 +22,7 @@ function runAnimation() {
     // type “Web3 Developer”
     .to(".description", {
       text: { value: "Web3 Developer" },
-      duration: 2.0,
+      duration: 2.4,
     })
 
     // label right after typing
