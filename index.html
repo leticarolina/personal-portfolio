@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="overflow-x-clip">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -32,7 +32,7 @@
     <link rel="icon" href="pictures/header.png" type="image" />
   </head>
 
-  <body class="bg-[#594545] text-[#FFF8EA]">
+  <body class="bg-[#594545] text-[#FFF8EA] overflow-x-clip max-w-[100vw]">
     <nav
       id="desktop-nav"
       class="hidden md:flex items-center justify-around h-[10vh] w-full font-['El_Messiri'] bg-transparent text-[#FFF8EA]"
@@ -128,16 +128,16 @@
 
     <section
       id="hero-section"
-      class="relative flex justify-center items-center h-[90vh] text-center"
+      class="relative flex justify-center items-center h-[90vh] text-center overflow-x-clip"
     >
       <div class="section_texts">
         <!-- Left flower -->
 
         <img
-          src="pictures/flower.svg"
+          src="pictures/programmer.svg"
           alt=""
           aria-hidden="true"
-          class="hero-flower-left pointer-events-none select-none absolute top-1/2 -translate-y-1/2 -left-[55%] md:-left-[40%] lg:-left-[15%] md:h-[80vh] w-auto -z-10 opacity-0"
+          class="hero-flower-left pointer-events-none select-none absolute top-1/2 -translate-y-1/2 -left-[45%] sm:-left-[45%] md:-left-[40%] lg:-left-[15%] md:h-[80vh] w-auto -z-10 opacity-0"
         />
 
         <img
@@ -146,6 +146,21 @@
           aria-hidden="true"
           class="hero-flower-right pointer-events-none select-none absolute top-1/2 -translate-y-1/2 -right-[55%] md:-right-[40%] lg:-right-[15%] md:h-[80vh] w-auto -z-10 [transform:scaleX(-1)] opacity-0"
         />
+        <!-- Left flower -->
+        <!-- <img
+          src="pictures/flower.svg"
+          alt=""
+          aria-hidden="true"
+          class="hero-flower-left pointer-events-none select-none absolute top-1/2 -translate-y-1/2 left-0 -translate-x-[55%] md:-translate-x-[40%] lg:-translate-x-[15%] md:h-[80vh] w-auto -z-10"
+        /> -->
+
+        <!-- Right flower -->
+        <!-- <img
+          src="pictures/flower.svg"
+          alt=""
+          aria-hidden="true"
+          class="hero-flower-right pointer-events-none select-none absolute top-1/2 -translate-y-1/2 right-0 translate-x-[55%] md:translate-x-[40%] lg:translate-x-[15%] md:h-[80vh] w-auto -z-10 [transform:scaleX(-1)]"
+        /> -->
 
         <p lang="en" class="hello text-lg md:text-2xl font-medium">
           Hello, I'm
@@ -220,7 +235,7 @@
       >
         <!-- Card -->
         <div
-          class="card transition-all duration-200 w-[280px] h-[410px] m-5 p-2 border border-[#FFF8EA] hover:-translate-y-4 shadow-[0_8px_12px_rgba(255,248,234,0.35),0_6px_6px_rgba(255,248,234,0.25)] hover:shadow-[0_18px_28px_rgba(255,248,234,0.6),0_12px_14px_rgba(255,248,234,0.5)]"
+          class="card transition-all duration-200 w-[280px] h-[410px] m-5 p-2 border border-[#FFF8EA] hover:-translate-y-4 hover:shadow-[0_18px_28px_rgba(255,248,234,0.6),0_12px_14px_rgba(255,248,234,0.5)]"
         >
           <div
             class="pt-2 flex flex-col h-[380px] justify-between items-center text-center"
@@ -234,12 +249,10 @@
                 >Fund Me Portal</span
               >
             </div>
-            <p
-              class="px-3 font-light text-left text-[14px] pb-2 mt-2 font-['El_Messiri']"
-            >
-              The first smart contract I deployed while shaping my path in Web3.
-              It’s a funding portal where anyone can send ETH directly. Try it
-              out and support my journey by funding this contract.
+            <p class="px-3 font-light text-left text-[14px] pb-2 mt-2">
+              First smart contract deployed while shaping my path in Web3. A
+              funding portal where anyone can send ETH directly. Try it out and
+              support my journey by funding this contract.
             </p>
 
             <div class="flex gap-4 justify-center mt-2">
@@ -282,7 +295,7 @@
 
         <!-- Card -->
         <div
-          class="card transition-all duration-200 w-[280px] h-[410px] m-5 p-2 border border-[#FFF8EA] hover:-translate-y-4 shadow-[0_8px_12px_rgba(255,248,234,0.35),0_6px_6px_rgba(255,248,234,0.25)] hover:shadow-[0_18px_28px_rgba(255,248,234,0.6),0_12px_14px_rgba(255,248,234,0.5)]"
+          class="card transition-all duration-200 w-[280px] h-[410px] m-5 p-2 border border-[#FFF8EA] hover:-translate-y-4 hover:shadow-[0_18px_28px_rgba(255,248,234,0.6),0_12px_14px_rgba(255,248,234,0.5)]"
         >
           <div
             class="pt-2 flex flex-col h-[380px] justify-between items-center text-center"
@@ -296,9 +309,7 @@
                 >Web3 Raffle</span
               >
             </div>
-            <p
-              class="px-3 font-light text-left text-[14px] pb-2 font-['El_Messiri']"
-            >
+            <p class="px-3 font-light text-left text-[14px] pb-2">
               A decentralized and automated raffle system running by Smart
               Contract, built with Solidity and integrated with Chainlink.
             </p>
@@ -321,7 +332,7 @@
             </div>
 
             <!-- Tags -->
-            <div class="flex justify-center gap-2 mt-4">
+            <div class="flex justify-center gap-2">
               <span
                 class="bg-[rgba(255,248,234,0.2)] text-[#FFF8EA] px-2 py-[2px] text-[11px] uppercase font-medium rounded-sm"
               >
@@ -343,7 +354,7 @@
 
         <!-- Card -->
         <div
-          class="card transition-all duration-200 w-[280px] h-[410px] m-5 p-2 border border-[#FFF8EA] hover:-translate-y-4 shadow-[0_8px_12px_rgba(255,248,234,0.35),0_6px_6px_rgba(255,248,234,0.25)] hover:shadow-[0_18px_28px_rgba(255,248,234,0.6),0_12px_14px_rgba(255,248,234,0.5)]"
+          class="card transition-all duration-200 w-[280px] h-[410px] m-5 p-2 border border-[#FFF8EA] hover:-translate-y-4 hover:shadow-[0_18px_28px_rgba(255,248,234,0.6),0_12px_14px_rgba(255,248,234,0.5)]"
         >
           <div
             class="pt-2 flex flex-col h-[380px] justify-between items-center text-center"
@@ -357,9 +368,7 @@
                 >Blockchain Finder</span
               >
             </div>
-            <p
-              class="px-3 font-light text-left text-[14px] pb-2 font-['El_Messiri']"
-            >
+            <p class="px-3 font-light text-left text-[14px] pb-2">
               Project created during my job as a Transaction Auditor to
               facilitate finding the relevant network of a given txID or deposit
               address.
@@ -383,7 +392,7 @@
             </div>
 
             <!-- Tags -->
-            <div class="flex justify-center gap-2 mt-4">
+            <div class="flex justify-center gap-2">
               <span
                 class="bg-[rgba(255,248,234,0.2)] text-[#FFF8EA] px-2 py-[2px] text-[11px] uppercase font-medium rounded-sm"
               >
@@ -401,7 +410,7 @@
         <!-- Coming soon (disabled) -->
 
         <div
-          class="card transition-all duration-200 w-[280px] h-[410px] m-5 p-2 border border-[#FFF8EA] hover:-translate-y-4 shadow-[0_8px_12px_rgba(255,248,234,0.35),0_6px_6px_rgba(255,248,234,0.25)] hover:shadow-[0_18px_28px_rgba(255,248,234,0.6),0_12px_14px_rgba(255,248,234,0.5)]"
+          class="card transition-all duration-200 w-[280px] h-[410px] m-5 p-2 border border-[#FFF8EA] hover:-translate-y-4 hover:shadow-[0_18px_28px_rgba(255,248,234,0.6),0_12px_14px_rgba(255,248,234,0.5)]"
         >
           <div
             class="pt-2 flex flex-col h-[380px] justify-between items-center text-center"
@@ -415,9 +424,7 @@
                 >DeFi Stablecoin</span
               >
             </div>
-            <p
-              class="px-3 font-light text-left text-[16px] pb-2 font-['El_Messiri']"
-            >
+            <p class="px-3 font-light text-left text-[16px] pb-2">
               Coming soon… currently developing.
             </p>
             <div class="flex gap-4 justify-center mt-2">
@@ -438,7 +445,7 @@
             </div>
 
             <!-- Tags -->
-            <div class="flex justify-center gap-2 mt-4">
+            <div class="flex justify-center gap-2">
               <span
                 class="bg-[rgba(255,248,234,0.2)] text-[#FFF8EA] px-2 py-[2px] text-[11px] uppercase font-medium rounded-sm"
               >

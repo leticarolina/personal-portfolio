@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt">
+<html lang="pt" class="overflow-x-clip">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -27,7 +27,7 @@
     <link rel="icon" href="pictures/header.png" type="image" />
   </head>
 
-  <body class="bg-[#594545] text-[#FFF8EA] overflow-x-hidden">
+  <body class="bg-[#594545] text-[#FFF8EA] overflow-x-clip max-w-[100vw]">
     <!-- NAV DESKTOP -->
     <nav
       id="desktop-nav"
@@ -132,7 +132,7 @@
           class="hero-flower-left pointer-events-none select-none absolute top-1/2 -translate-y-1/2 -left-[55%] md:-left-[40%] lg:-left-[15%] md:h-[80vh] w-auto -z-10 opacity-0"
         />
         <img
-          src="pictures/flower.svg"
+          src="pictures/programmer.svg"
           alt=""
           aria-hidden="true"
           class="hero-flower-right pointer-events-none select-none absolute top-1/2 -translate-y-1/2 -right-[55%] md:-right-[40%] lg:-right-[15%] md:h-[80vh] w-auto -z-10 [transform:scaleX(-1)] opacity-0"
@@ -210,7 +210,7 @@
       >
         <!-- Card 1 -->
         <div
-          class="card transition-all duration-200 w-[280px] h-[410px] m-5 p-2 border border-[#FFF8EA] hover:-translate-y-4 shadow-[0_8px_12px_rgba(255,248,234,0.35),0_6px_6px_rgba(255,248,234,0.25)] hover:shadow-[0_18px_28px_rgba(255,248,234,0.6),0_12px_14px_rgba(255,248,234,0.5)]"
+          class="card transition-all duration-200 w-[280px] h-[410px] m-5 p-2 border border-[#FFF8EA] hover:-translate-y-4 hover:shadow-[0_18px_28px_rgba(255,248,234,0.6),0_12px_14px_rgba(255,248,234,0.5)]"
         >
           <div
             class="pt-2 flex flex-col h-[380px] justify-between items-center text-center"
@@ -223,12 +223,10 @@
                 >Fund Me Portal</span
               >
             </div>
-            <p
-              class="px-3 font-light text-left text-[14px] pb-2 mt-2 font-['El_Messiri']"
-            >
-              Meu primeiro smart contract implantado. Um portal de doações onde
-              qualquer pessoa pode enviar ETH diretamente. Caso queira apoiar
-              meu trabalho na Web3, teste através deste projeto.
+            <p class="px-3 font-light text-left text-[14px] pb-2 mt-2">
+              Primeiro smart contract. Um portal de doações onde qualquer pessoa
+              pode enviar ETH diretamente. Caso queira apoiar meu trabalho na
+              Web3, teste através deste projeto.
             </p>
 
             <div class="flex gap-4 justify-center mt-2">
@@ -267,7 +265,7 @@
 
         <!-- Card 2 -->
         <div
-          class="card transition-all duration-200 w-[280px] h-[410px] m-5 p-2 border border-[#FFF8EA] hover:-translate-y-4 shadow-[0_8px_12px_rgba(255,248,234,0.35),0_6px_6px_rgba(255,248,234,0.25)] hover:shadow-[0_18px_28px_rgba(255,248,234,0.6),0_12px_14px_rgba(255,248,234,0.5)]"
+          class="card transition-all duration-200 w-[280px] h-[410px] m-5 p-2 border border-[#FFF8EA] hover:-translate-y-4 hover:shadow-[0_18px_28px_rgba(255,248,234,0.6),0_12px_14px_rgba(255,248,234,0.5)]"
         >
           <div
             class="pt-2 flex flex-col h-[380px] justify-between items-center text-center"
@@ -280,14 +278,12 @@
                 >Web3 Raffle</span
               >
             </div>
-            <p
-              class="px-3 font-light text-left text-[14px] pb-2 font-['El_Messiri']"
-            >
+            <p class="px-3 font-light text-left text-[14px] pb-2">
               Rifa descentralizada e automatizada via Smart Contract, com
-              integração Chainlink.
+              integração Chainlink para automação e escolha do ganhador.
             </p>
 
-            <div class="flex gap-4 justify-center mt-2">
+            <div class="flex gap-4 justify-center">
               <a
                 href="https://raffle-d-app.vercel.app/"
                 target="_blank"
@@ -304,7 +300,7 @@
               </a>
             </div>
 
-            <div class="flex justify-center gap-2 mt-4">
+            <div class="flex justify-center gap-2">
               <span
                 class="bg-[rgba(255,248,234,0.2)] text-[#FFF8EA] px-2 py-[2px] text-[11px] uppercase font-medium rounded-sm"
                 >Solidity</span
@@ -323,7 +319,7 @@
 
         <!-- Card 3 -->
         <div
-          class="card transition-all duration-200 w-[280px] h-[410px] m-5 p-2 border border-[#FFF8EA] hover:-translate-y-4 shadow-[0_8px_12px_rgba(255,248,234,0.35),0_6px_6px_rgba(255,248,234,0.25)] hover:shadow-[0_18px_28px_rgba(255,248,234,0.6),0_12px_14px_rgba(255,248,234,0.5)]"
+          class="card transition-all duration-200 w-[280px] h-[410px] m-5 p-2 border border-[#FFF8EA] hover:-translate-y-4 hover:shadow-[0_18px_28px_rgba(255,248,234,0.6),0_12px_14px_rgba(255,248,234,0.5)]"
         >
           <div
             class="pt-2 flex flex-col h-[380px] justify-between items-center text-center"
@@ -336,9 +332,7 @@
                 >Blockchain Finder</span
               >
             </div>
-            <p
-              class="px-3 font-light text-left text-[14px] pb-2 font-['El_Messiri']"
-            >
+            <p class="px-3 font-light text-left text-[14px] pb-2">
               Ferramenta que criei no trabalho como Auditora de Transações para
               identificar a rede correta de um txID ou endereço de depósito.
             </p>
@@ -360,7 +354,7 @@
               </a>
             </div>
 
-            <div class="flex justify-center gap-2 mt-4">
+            <div class="flex justify-center gap-2">
               <span
                 class="bg-[rgba(255,248,234,0.2)] text-[#FFF8EA] px-2 py-[2px] text-[11px] uppercase font-medium rounded-sm"
                 >Frontend</span
@@ -375,7 +369,7 @@
 
         <!-- Em breve -->
         <div
-          class="card transition-all duration-200 w-[280px] h-[410px] m-5 p-2 border border-[#FFF8EA] hover:-translate-y-4 shadow-[0_8px_12px_rgba(255,248,234,0.35),0_6px_6px_rgba(255,248,234,0.25)] hover:shadow-[0_18px_28px_rgba(255,248,234,0.6),0_12px_14px_rgba(255,248,234,0.5)]"
+          class="card transition-all duration-200 w-[280px] h-[410px] m-5 p-2 border border-[#FFF8EA] hover:-translate-y-4 hover:shadow-[0_18px_28px_rgba(255,248,234,0.6),0_12px_14px_rgba(255,248,234,0.5)]"
         >
           <div
             class="pt-2 flex flex-col h-[380px] justify-between items-center text-center"
@@ -388,9 +382,7 @@
                 >DeFi Stablecoin</span
               >
             </div>
-            <p
-              class="px-3 font-light text-left text-[16px] pb-2 font-['El_Messiri']"
-            >
+            <p class="px-3 font-light text-left text-[16px] pb-2">
               Em breve… em desenvolvimento.
             </p>
             <div class="flex gap-4 justify-center mt-2">
@@ -409,7 +401,7 @@
               </a>
             </div>
 
-            <div class="flex justify-center gap-2 mt-4">
+            <div class="flex justify-center gap-2">
               <span
                 class="bg-[rgba(255,248,234,0.2)] text-[#FFF8EA] px-2 py-[2px] text-[11px] uppercase font-medium rounded-sm"
                 >Solidity</span
