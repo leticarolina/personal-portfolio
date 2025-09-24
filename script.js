@@ -5,11 +5,13 @@ const myName = document.querySelector(".name");
 const body = document.querySelector("body");
 
 const tl = gsap.timeline({ defaults: { duration: 1, ease: "power3.out" } });
+gsap.set(".hello, .name", { autoAlpha: 0, scale: 0.5 });
 
 function runAnimation() {
   tl
     // name + hello pop
-    .from(".hello, .name", { scale: 0, duration: 0.9, ease: "bounce" })
+    // .from(".hello, .name", { scale: 0, duration: 0.9, ease: "bounce" })
+    .to(".hello, .name", { autoAlpha: 1, scale: 1, duration: 0.9, ease: "bounce" })
 
     // blinking cursor
     .fromTo(
@@ -42,7 +44,10 @@ function runAnimation() {
       "afterType+=0.1"
     );
 }
-body.onload = runAnimation;
+
+// run on full load to avoid the flash
+window.addEventListener("load", runAnimation);
+// body.onload = runAnimation;
 
 // Download CV
 downloadButton?.addEventListener("click", () => {
