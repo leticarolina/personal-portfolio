@@ -11,7 +11,7 @@ function runAnimation() {
   tl
     // name + hello pop
     // .from(".hello, .name", { scale: 0, duration: 0.9, ease: "bounce" })
-    .to(".hello, .name", { autoAlpha: 1, scale: 1, duration: 0.9, ease: "bounce" })
+    .to(".hello, .name", { autoAlpha: 1, scale: 1, duration: 0.8, ease: "bounce" })
 
     // blinking cursor
     .fromTo(
@@ -34,7 +34,7 @@ function runAnimation() {
     .fromTo(
       ".hero-flower-left",
       { autoAlpha: 0, x: "-24px" },
-      { autoAlpha: 1, x: "0px", duration: 0.8 },
+      { autoAlpha: 1, x: "0px", duration: 0.5 },
       "afterType+=0"
     )
     .fromTo(
