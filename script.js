@@ -31,13 +31,13 @@ function runAnimation() {
     // label right after typing
     .add("afterType")
 
-    // reveal flowers (left then right, staggered a bit)
-    .fromTo(
-      ".hero-flower-left",
-      { autoAlpha: 0, x: "-24px" },
-      { autoAlpha: 1, x: "0px", duration: 0.5 },
-      "<"
-    )
+  // flower element hidden — animation commented out
+  // .fromTo(
+  //   ".hero-flower-left",
+  //   { autoAlpha: 0, x: "-24px" },
+  //   { autoAlpha: 1, x: "0px", duration: 0.5 },
+  //   "<"
+  // )
   // .fromTo(
   //   ".hero-flower-right",
   //   { autoAlpha: 0, x: "24px" },
@@ -47,7 +47,28 @@ function runAnimation() {
 }
 
 // run on full load to avoid the flash
-window.addEventListener("load", runAnimation);
+window.addEventListener("load", () => {
+  runAnimation();
+
+  gsap.registerPlugin(ScrollTrigger);
+
+  // Staggered card entrance on scroll
+  // gsap.from(".glass-card", {
+  //   scrollTrigger: { trigger: "#projects", start: "top 85%" },
+  //   opacity: 0, y: 40, stagger: 0.10, duration: 0.6, ease: "power3.out",
+  // });
+
+  // About skill boxes
+  gsap.from(".box-details-container", {
+    scrollTrigger: { trigger: "#about", start: "top 80%" },
+    opacity: 0, y: 20, stagger: 0.10, duration: 0.6, ease: "power2.out",
+  });
+
+  // Nav slide in
+  gsap.from("#desktop-nav, #mobile-nav", {
+    y: -20, opacity: 0, duration: 0.6, ease: "power2.out", delay: 0.3,
+  });
+});
 // body.onload = runAnimation;
 
 // Download CV

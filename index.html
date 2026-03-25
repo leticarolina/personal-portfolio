@@ -29,146 +29,147 @@
     <link rel="icon" href="pictures/header.png" type="image" />
   </head>
 
-  <body class="bg-[#594545] text-[#FFF8EA] overflow-x-clip max-w-[100vw]">
+  <body class="bg-[#594545] text-[#FFF8EA] overflow-x-clip max-w-[100vw] bg-grid-pattern">
 
     <!-- DESKTOP NAV -->
     <nav
       id="desktop-nav"
-      class="hidden md:flex items-center justify-around h-[10vh] w-full font-['El_Messiri'] bg-transparent text-[#FFF8EA] absolute top-0 left-0 z-30"
+      class="hidden md:flex items-center justify-around h-[10vh] w-full font-['El_Messiri'] nav-glass text-[#FFF8EA] fixed top-0 left-0 z-30 bg-[#fff8ea0a] "
     >
       <div
         id="logo-name"
-        class="text-[19px] text-[#594545] cursor-default hover:text-[#AF8B8B] transition-colors"
+        class="text-[19px]  cursor-default text-[#FFF8EA] hover:text-[#D1AEAE] font-bold tracking-wider"
       >
         LA
       </div>
-  
+
       <div>
-        <ul id="navigation-bar" class="flex items-center space-x-4 mr-20 text-[#594545]">
+        <ul id="navigation-bar" class="flex items-center space-x-4 mr-20 text-[#D1AEAE]">
           <li>
-            <a href="#about" class="text-[18px] hover:underline underline-offset-[10px] ">
+            <a href="#about" class="text-[18px] hover:underline underline-offset-[10px] hover:text-[#FFF8EA] transition-colors">
               About me
             </a>
           </li>
           <li>
-            <a href="#projects" class="text-[18px] hover:underline underline-offset-[10px]">
+            <a href="#projects" class="text-[18px] hover:underline underline-offset-[10px] hover:text-[#FFF8EA] transition-colors">
               Projects
             </a>
           </li>
           <li>
-            <a href="#contact-me" class="text-[18px] hover:underline underline-offset-[10px]">
+            <a href="#contact-me" class="text-[18px] hover:underline underline-offset-[10px] hover:text-[#FFF8EA] transition-colors">
               Contact me
             </a>
           </li>
         </ul>
       </div>
-  
+
       <div class="translate bg-transparent border-0">
         <img
           src="pictures/translate-26.svg"
           alt="Arrow icon"
           id="translate-menu-icon"
-          class="h-[30px] w-[30px] hover:scale-110 transition-transform"
+          class="h-[30px] w-[30px] hover:scale-110 transition-transform icon-light"
         />
       </div>
     </nav>
-  
+
     <!-- MOBILE NAV -->
     <nav
       id="mobile-nav"
-      class="md:hidden flex items-center h-[10vh] w-full px-4 absolute top-0 left-0 z-30 text-[#594545]"
+      class="md:hidden flex items-center h-[10vh] w-full px-4 fixed top-0 left-0 z-30 text-[#D1AEAE] nav-glass bg-[#fff8ea0a] "
     >
       <div class="w-16">
-        <span id="logo-name" class="font-['El_Messiri'] text-[19px] ">
+        <span id="logo-name" class="font-['El_Messiri'] text-[19px] text-[#FFF8EA] hover:text-[#D1AEAE] font-bold">
           LA
         </span>
       </div>
-  
+
       <ul class="flex items-center gap-8 mx-auto  font-['El_Messiri']">
         <li>
-          <a href="#projects" class="text-[16px] hover:underline underline-offset-4">
+          <a href="#projects" class="text-[16px] hover:underline underline-offset-4 hover:text-[#FFF8EA] transition-colors">
             Projects
           </a>
         </li>
         <li>
-          <a href="#about" class="text-[16px] hover:underline underline-offset-4">
+          <a href="#about" class="text-[16px] hover:underline underline-offset-4 hover:text-[#FFF8EA] transition-colors">
             About me
           </a>
         </li>
       </ul>
-  
+
       <button class="w-16 flex justify-end translate">
         <img
           src="pictures/translate-26.svg"
           alt="Translate"
           id="translate-menu-icon"
-          class="h-[28px] w-[28px] hover:scale-110 transition-transform "
+          class="h-[28px] w-[28px] hover:scale-110 transition-transform icon-light"
         />
       </button>
     </nav>
-  
+
     <!---------------------------- HERO ---------------------- -->
     <section
     id="hero-section"
-    class="relative flex flex-col md:flex-row w-full overflow-hidden bg-[#c9c5c3] h-[100vh]"
+    class="relative flex flex-col md:flex-row w-full overflow-hidden hero-gradient-overlay bg-dot-pattern h-[100vh]"
   >
-  
+
     <!-- TEXT COLUMN -->
-    <div class="flex flex-col justify-center h-full pl-8 md:pl-20 w-full md:w-1/2 z-20">
+    <div class="flex flex-col justify-center h-full pl-8 md:pl-20 w-full md:w-1/2 z-20 pt-[10vh] md:pt-0">
       <img
       src="pictures/flower.svg"
       alt=""
       aria-hidden="true"
-      class="hero-flower-left pointer-events-none select-none absolute top-[65%] md:top-1/2 -translate-y-1/2 -left-[45%] lg:-left-[15%] md:h-[80vh] w-auto -z-10 opacity-0"
+      class="hero-flower-left pointer-events-none select-none absolute top-[65%] md:top-1/2 -translate-y-1/2 -left-[45%] lg:-left-[15%] md:h-[80vh] w-auto -z-10 opacity-0 hidden"
     />
       <!-- NAME -->
       <h1 class="name lg:flex text-6xl md:text-8xl font-extrabold leading-none tracking-tight ">
-        LETICIA <span class="font-light italic lg:text-[#594545] text-white">AZEVEDO</span>
+        LETICIA <span class="font-light italic text-gradient-cyan-purple">AZEVEDO</span>
       </h1>
-  
-      <!-- TITLE -->
-      <h1 class=" lg:flex text-6xl md:text-8xl font-extrabold leading-none tracking-tight ml-16 md:ml-48"
-      >
-       <span class=" font-light italic text-[#594545]"></span>
+
+      <!-- TAGLINE -->
+      <h1 class="lg:flex font-extrabold leading-none tracking-tight ml-16 md:ml-48">
+        <span class="font-light not-italic text-[#D1AEAE] text-[22px] md:text-[26px] tracking-[0.12em] font-['El_Messiri'] block mt-2">
+          <span>Web3 Solidity Engineer</span>
+        </span>
       </h1>
-  
+
       <!-- BUTTONS -->
       <div class="mt-8 lg:mt-16 flex gap-5 text-white lg:ml-40">
         <a
           href="https://github.com/leticarolina"
           target="_blank"
           rel="noreferrer"
-          class="rounded-md button inline-flex items-center gap-2 px-3 py-2 justify-center border  font-light bg-white/20 hover:bg-white/10 transition"
+          class="btn-ghost inline-flex items-center gap-2 px-3 py-2 justify-center glow-cyan-hover transition"
         >
-          <img src="pictures/github.svg" alt="GitHub" class="h-7 w-7" />
-         
+          <img src="pictures/github.svg" alt="GitHub" class="h-7 w-7 icon-light" />
+
         </a>
-  
+
         <a
           href="https://www.linkedin.com/in/leti-azevedo/"
           target="_blank"
           rel="noreferrer"
-          class="rounded-md button inline-flex items-center gap-2 px-3 py-2 justify-center border font-light bg-white/20 hover:bg-white/10 transition"
+          class="btn-ghost inline-flex items-center gap-2 px-3 py-2 justify-center glow-cyan-hover transition"
         >
-          <img src="pictures/linkedin.svg" alt="LinkedIn" class="h-7 w-7" />
+          <img src="pictures/linkedin.svg" alt="LinkedIn" class="h-7 w-7 icon-light" />
         </a>
 
         <a
         href="https://x.com/letiweb3"
         target="_blank"
         rel="noreferrer"
-        class="rounded-md button inline-flex items-center gap-2 px-3 py-2 justify-center border font-light bg-white/20 hover:bg-white/10 transition"
+        class="btn-ghost inline-flex items-center gap-2 px-3 py-2 justify-center glow-cyan-hover transition"
       >
-        <img src="pictures/x.svg" alt="LinkedIn" class="h-7 w-7" />
+        <img src="pictures/x.svg" alt="X" class="h-7 w-7 icon-light" />
       </a>
       </div>
     </div>
-  
+
     <!-- IMAGE COLUMN -->
 
-    <div class="relative hidden md:flex md:justify-end w-full md:w-1/2 mt-8 "> 
-      <img src="pictures/leticia.jpeg" alt="Portrait of Leticia" id="hero-img" 
-      class="object-cover h-full md:h-[80vh] rounded-2xl md:absolute md:right-10 md:top-1/2 md:-translate-y-1/2 lg:right-40 opacity-60 hover:opacity-80" /> 
+    <div class="relative hidden md:flex md:justify-end w-full md:w-1/2 mt-8 ">
+      <img src="pictures/leticia.jpeg" alt="Portrait of Leticia" id="hero-img"
+      class="h-[62vh] w-auto max-w-[340px] object-cover object-top rounded-2xl md:absolute md:right-8 lg:right-28 md:top-1/2 md:-translate-y-1/2 opacity-60 hover:opacity-90 transition shadow-[0_8px_40px_rgba(58,38,38,0.6)]" />
     </div>
 
     <!-- IMAGE COLUMN (mobile ONLY) -->
@@ -186,20 +187,20 @@
       href="#projects"
       class="absolute bottom-6 left-1/2 -translate-x-1/2 opacity-70 hover:opacity-100 transition"
     >
-      <img src="pictures/arrow.svg" class="rotate-180 h-8 w-8" />
+      <img src="pictures/arrow.svg" class="rotate-180 h-8 w-8 arrow-cyan" />
     </a>
-  
+
   </section>
-  
+
 
     <!-------------PROJECTS SECTION ------------>
-    <section id="projects" class="grid place-items-center mb-12">
+    <section id="projects" class="grid place-items-center mb-12 bg-[#4a3535] py-4">
       <!-- Title -->
       <div class="project-title text-center pt-20 pb-10">
-        <p class="pretitle text-[16px] text-[#AF8B8B] font-['Taviraj',serif]">
+        <p class="pretitle text-[13px] text-[#AF8B8B] font-['El_Messiri'] tracking-[0.2em] uppercase">
           Explore my
         </p>
-        <h1 class="title text-[38px] font-['Taviraj',serif] font-bold">
+        <h1 class="title text-[38px] font-['Antonio',sans-serif] font-bold text-[#FFF8EA]">
           Projects
         </h1>
       </div>
@@ -208,79 +209,117 @@
       <div
         class="projects-container flex justify-center flex-wrap px-4 py-5 w-full"
       >
+
+            <!-- Card: LockFi -->
+            <div
+            class="glass-card w-[280px] h-[410px] m-5 p-3 relative border-[#FFF8EA]"
+          >
+            <!-- Hackathon badge -->
+            <div class="absolute top-3 right-3 z-10">
+              <span class="inline-flex items-center gap-1 px-2 py-1 rounded-full text-[10px] font-bold uppercase tracking-widest" style="background: linear-gradient(90deg, rgba(255,248,234,0.12), rgba(175,139,139,0.18)); border: 2px solid rgba(255,248,234,0.35); color: #FFF8EA;">
+                🏆 Hackathon Winner
+              </span>
+            </div>
+            <div
+              class="pt-2 flex flex-col h-[380px] justify-between items-center text-center"
+            >
+              <!-- Title block -->
+              <div
+                class="w-[250px] h-[160px] card-title-box flex items-center justify-center bg-[#4a3535]"
+              >
+                <span
+                  class="text-left font-['Antonio',sans-serif] font-bold text-[55px] tracking-[1px] leading-none text-gradient-cyan-purple"
+                  >LockFi</span
+                >
+              </div>
+              <p class="px-3 font-light text-left text-[14px] pb-2 text-[#FFF8EA]">
+                LockFi is a smart safe that detects suspicious withdrawals and adds a waiting time and cancellation option to them, helping users avoid quick loss of funds.
+              </p>
+              <div class="flex gap-4 justify-center mt-2">
+                <a
+                href="https://lock-fi.vercel.app/"
+                target="_blank"
+                class="btn-primary-gradient px-4 py-2 min-w-[90px] text-sm text-center"
+              >
+                Live
+              </a>
+              <a
+              href="https://github.com/leticarolina/lock-fi"
+              target="_blank"
+              class="btn-outline-cyan px-4 py-2 min-w-[90px] text-sm text-center"
+            >
+              Github
+            </a>
+              </div>
+              <div class="flex justify-center gap-2 mt-2">
+                <span class="tag-chip">MONAD HACKATON</span>
+               <span class="tag-chip">SOLIDITY</span>
+              </div>
+            </div>
+          </div>
         <!-- Card -->
+
+        
         <div
-          class="card transition-all duration-200 w-[280px] h-[410px] m-5 p-2 border border-[#FFF8EA] hover:-translate-y-4 hover:shadow-[0_18px_28px_rgba(255,248,234,0.6),0_12px_14px_rgba(255,248,234,0.5)]"
+          class="glass-card w-[280px] h-[410px] m-5 p-3 border-[#FFF8EA] "
         >
           <div
             class="pt-2 flex flex-col h-[380px] justify-between items-center text-center"
           >
             <!-- Title block -->
             <div
-              class="w-[250px] h-[160px] border border-[#9E7676] flex items-center justify-center"
+              class="w-[250px] h-[160px] card-title-box flex items-center justify-center bg-[#4a3535]"
             >
               <span
-                class="text-left font-['Antonio',sans-serif] font-bold text-[55px] tracking-[1px] leading-none"
+                class="text-left font-['Antonio',sans-serif] font-bold text-[55px] tracking-[1px] leading-none text-gradient-cyan-purple "
                 >Smart Marriage</span
               >
             </div>
-            <p class="px-3 font-light text-left text-[14px] pb-2 mt-2">
-            A decentralized marriage on-chain, allows 2 verified humans via World ID to form a bond and earn daily yield + unique NFT's.</S>
+            <p class="px-3 font-light text-left text-[14px] pb-2 mt-2 text-[#FFF8EA]">
+            A decentralized marriage on-chain, allows 2 WorldID verified humans to form a ZK bond, upon marriage users earn TIME token as daily yield and relationship milestones NFT's.
             </p>
 
             <div class="flex gap-4 justify-center mt-2">
-              <span
-              class="px-4 py-2 min-w-[90px] rounded-md bg-gray-300/40 text-white text-sm font-medium border border-gray-400/50 cursor-not-allowed text-center"
+              <!-- <span
+              class="btn-disabled px-4 py-2 min-w-[90px] text-sm text-center"
             >
               Live App soon
-            </span>
+            </span> -->
               <a
                 href="https://github.com/leticarolina/worldid-marriage-protocol"
                 target="_blank"
-                class="px-4 py-2 min-w-[90px] rounded-md bg-[#594545] text-[#FFF8EA] text-sm font-medium border border-[#FFF8EA] hover:bg-white/20 transition text-center"
+                class="btn-outline-cyan px-4 py-2 min-w-[90px] text-sm text-center"
               >
                 Github
               </a>
             </div>
 
             <!-- Tags -->
-            <div class="flex justify-center gap-2 mt-4">
-              <span
-                class="bg-[rgba(255,248,234,0.2)] text-[#FFF8EA] px-2 py-[2px] text-[11px] uppercase font-medium rounded-sm"
-              >
-                World miniapp
-              </span>
-              <span
-                class="bg-[rgba(255,248,234,0.2)] text-[#FFF8EA] px-2 py-[2px] text-[11px] uppercase font-medium rounded-sm"
-              >
-              World ID
-              </span>
-              <span
-                class="bg-[rgba(255,248,234,0.2)] text-[#FFF8EA] px-2 py-[2px] text-[11px] uppercase font-medium rounded-sm"
-              >
-                Solidity
-              </span>
+            <div class="flex justify-center gap-2 mt-2">
+              <span class="tag-chip">Miniapp</span>
+              <span class="tag-chip">World ID</span>
+              <span class="tag-chip">Solidity</span>
             </div>
           </div>
         </div>
 
 
         <div
-          class="card transition-all duration-200 w-[280px] h-[410px] m-5 p-2 border border-[#FFF8EA] hover:-translate-y-4 hover:shadow-[0_18px_28px_rgba(255,248,234,0.6),0_12px_14px_rgba(255,248,234,0.5)]"
+          class="glass-card w-[280px] h-[410px] m-5 p-3 border-[#FFF8EA]"
         >
           <div
             class="pt-2 flex flex-col h-[380px] justify-between items-center text-center"
           >
             <!-- Title block -->
             <div
-              class="w-[250px] h-[160px] border border-[#9E7676] flex items-center justify-center"
+              class="w-[250px] h-[160px] card-title-box flex items-center justify-center  bg-[#4a3535]"
             >
               <span
-                class="text-left font-['Antonio',sans-serif] font-bold text-[55px] tracking-[1px] leading-none"
+                class="text-left font-['Antonio',sans-serif] font-bold text-[55px] tracking-[1px] leading-none text-gradient-cyan-purple"
                 >AZD Stablecoin</span
               >
             </div>
-            <p class="px-3 font-light text-left text-[14px] pb-2 mt-2">
+            <p class="px-3 font-light text-left text-[14px] pb-2 mt-2 text-[#FFF8EA]">
               A dex stablecoin backed by ETH and BTC, where users deposit collateral to mint AZD. The protocol maintains solvency through  health-factor checks and liquidation logic.
             </p>
 
@@ -288,52 +327,44 @@
               <a
                 href="https://azd-delta.vercel.app/"
                 target="_blank"
-                class="px-4 py-2 min-w-[90px] rounded-md bg-[#594545] text-[#FFF8EA] text-sm font-medium border border-[#FFF8EA] hover:bg-white/20 transition text-center"
+                class="btn-primary-gradient px-4 py-2 min-w-[90px] text-sm text-center"
               >
                 Live
               </a>
               <a
                 href="https://github.com/leticarolina/defi-stablecoin"
                 target="_blank"
-                class="px-4 py-2 min-w-[90px] rounded-md bg-[#594545] text-[#FFF8EA] text-sm font-medium border border-[#FFF8EA] hover:bg-white/20 transition text-center"
+                class="btn-outline-cyan px-4 py-2 min-w-[90px] text-sm text-center"
               >
                 Github
               </a>
             </div>
 
             <!-- Tags -->
-            <div class="flex justify-center gap-2">
-              <span
-                class="bg-[rgba(255,248,234,0.2)] text-[#FFF8EA] px-2 py-[2px] text-[11px] uppercase font-medium rounded-sm"
-              >
-                Solidity/foundry
-              </span>
-              <span
-                class="bg-[rgba(255,248,234,0.2)] text-[#FFF8EA] px-2 py-[2px] text-[11px] uppercase font-medium rounded-sm"
-              >
-                React/Next.js
-              </span>
+            <div class="flex justify-center gap-2 mt-2">
+              <span class="tag-chip">Solidity/foundry</span>
+              <span class="tag-chip">React/Next.js</span>
             </div>
           </div>
         </div>
 
         <!-- Card -->
         <div
-          class="card transition-all duration-200 w-[280px] h-[410px] m-5 p-2 border border-[#FFF8EA] hover:-translate-y-4 hover:shadow-[0_18px_28px_rgba(255,248,234,0.6),0_12px_14px_rgba(255,248,234,0.5)]"
+          class="glass-card w-[280px] h-[410px] m-5 p-3 border-[#FFF8EA]"
         >
           <div
             class="pt-2 flex flex-col h-[380px] justify-between items-center text-center"
           >
             <!-- Title block -->
             <div
-              class="w-[250px] h-[160px] border border-[#9E7676] flex items-center justify-center"
+              class="w-[250px] h-[160px] card-title-box flex items-center justify-center bg-[#4a3535]"
             >
               <span
-                class="text-left font-['Antonio',sans-serif] font-bold text-[55px] tracking-[1px] leading-none"
+                class="text-left font-['Antonio',sans-serif] font-bold text-[55px] tracking-[1px] leading-none text-gradient-cyan-purple"
                 >Web3 Raffle</span
               >
             </div>
-            <p class="px-3 font-light text-left text-[14px] pb-2">
+            <p class="px-3 font-light text-left text-[14px] pb-2 text-[#FFF8EA]">
               A decentralized and automated raffle system running by Smart
               Contract, built with Solidity and integrated with Chainlink.
             </p>
@@ -342,14 +373,14 @@
               <a
                 href="https://raffle-d-app.vercel.app/"
                 target="_blank"
-                class="px-4 py-2 min-w-[90px] rounded-md bg-[#594545] text-[#FFF8EA] text-sm font-medium border border-[#FFF8EA] hover:bg-white/20 transition text-center"
+                class="btn-primary-gradient px-4 py-2 min-w-[90px] text-sm text-center"
               >
                 Live
               </a>
               <a
                 href="https://github.com/leticarolina/Raffle-dApp"
                 target="_blank"
-                class="px-4 py-2 min-w-[90px] rounded-md bg-[#594545] text-[#FFF8EA] text-sm font-medium border border-[#FFF8EA] hover:bg-white/20 transition text-center"
+                class="btn-outline-cyan px-4 py-2 min-w-[90px] text-sm text-center"
               >
                 Github
               </a>
@@ -357,41 +388,29 @@
 
             <!-- Tags -->
             <div class="flex justify-center gap-2">
-              <span
-                class="bg-[rgba(255,248,234,0.2)] text-[#FFF8EA] px-2 py-[2px] text-[11px] uppercase font-medium rounded-sm"
-              >
-                Solidity
-              </span>
-              <span
-                class="bg-[rgba(255,248,234,0.2)] text-[#FFF8EA] px-2 py-[2px] text-[11px] uppercase font-medium rounded-sm"
-              >
-                Foundry
-              </span>
-              <span
-                class="bg-[rgba(255,248,234,0.2)] text-[#FFF8EA] px-2 py-[2px] text-[11px] uppercase font-medium rounded-sm"
-              >
-                React.js
-              </span>
+              <span class="tag-chip">Solidity</span>
+              <span class="tag-chip">Foundry</span>
+              <span class="tag-chip">React.js</span>
             </div>
           </div>
         </div>
 
         <div
-          class="card transition-all duration-200 w-[280px] h-[410px] m-5 p-2 border border-[#FFF8EA] hover:-translate-y-4 hover:shadow-[0_18px_28px_rgba(255,248,234,0.6),0_12px_14px_rgba(255,248,234,0.5)]"
+          class="glass-card w-[280px] h-[410px] m-5 p-3 border-[#FFF8EA]"
         >
           <div
             class="pt-2 flex flex-col h-[380px] justify-between items-center text-center"
           >
             <!-- Title block -->
             <div
-              class="w-[250px] h-[160px] border border-[#9E7676] flex items-center justify-center"
+              class="w-[250px] h-[160px] card-title-box flex items-center justify-center  bg-[#4a3535]"
             >
               <span
-                class="text-left font-['Antonio',sans-serif] font-bold text-[55px] tracking-[1px] leading-none"
+                class="text-left font-['Antonio',sans-serif] font-bold text-[55px] tracking-[1px] leading-none text-gradient-cyan-purple"
                 >Fund Me Portal</span
               >
             </div>
-            <p class="px-3 font-light text-left text-[14px] pb-2 mt-2">
+            <p class="px-3 font-light text-left text-[14px] pb-2 mt-2 text-[#FFF8EA]">
               First smart contract deployed while shaping my path in Web3. A
               My personal funding portal deployed on Arbitrum where anyone can send ETH directly. Try it out and
               support!
@@ -401,14 +420,14 @@
               <a
                 href="https://fundme-contract.vercel.app/"
                 target="_blank"
-                class="px-4 py-2 min-w-[90px] rounded-md bg-[#594545] text-[#FFF8EA] text-sm font-medium border border-[#FFF8EA] hover:bg-white/20 transition text-center"
+                class="btn-primary-gradient px-4 py-2 min-w-[90px] text-sm text-center"
               >
                 Live
               </a>
               <a
                 href="https://github.com/leticarolina/fundme-contract"
                 target="_blank"
-                class="px-4 py-2 min-w-[90px] rounded-md bg-[#594545] text-[#FFF8EA] text-sm font-medium border border-[#FFF8EA] hover:bg-white/20 transition text-center"
+                class="btn-outline-cyan px-4 py-2 min-w-[90px] text-sm text-center"
               >
                 Github
               </a>
@@ -416,42 +435,32 @@
 
             <!-- Tags -->
             <div class="flex justify-center gap-2 mt-4">
-              <span
-                class="bg-[rgba(255,248,234,0.2)] text-[#FFF8EA] px-2 py-[2px] text-[11px] uppercase font-medium rounded-sm"
-              >
-                Solidity
-              </span>
-              <span
-                class="bg-[rgba(255,248,234,0.2)] text-[#FFF8EA] px-2 py-[2px] text-[11px] uppercase font-medium rounded-sm"
-              >
-                Foundry
-              </span>
-              <span
-                class="bg-[rgba(255,248,234,0.2)] text-[#FFF8EA] px-2 py-[2px] text-[11px] uppercase font-medium rounded-sm"
-              >
-                React.js
-              </span>
+              <span class="tag-chip">Solidity</span>
+              <span class="tag-chip">Foundry</span>
+              <span class="tag-chip">React.js</span>
             </div>
           </div>
         </div>
 
+  
+
         <!-- Card -->
         <div
-          class="card transition-all duration-200 w-[280px] h-[410px] m-5 p-2 border border-[#FFF8EA] hover:-translate-y-4 hover:shadow-[0_18px_28px_rgba(255,248,234,0.6),0_12px_14px_rgba(255,248,234,0.5)]"
+          class="glass-card w-[280px] h-[410px] m-5 p-3 border-[#FFF8EA]"
         >
           <div
             class="pt-2 flex flex-col h-[380px] justify-between items-center text-center"
           >
             <!-- Title block -->
             <div
-              class="w-[250px] h-[160px] border border-[#9E7676] flex items-center justify-center"
+              class="w-[250px] h-[160px] card-title-box flex items-center justify-center  bg-[#4a3535]"
             >
               <span
-                class="text-left font-['Antonio',sans-serif] font-bold text-[55px] tracking-[1px] leading-none"
+                class="text-left font-['Antonio',sans-serif] font-bold text-[55px] tracking-[1px] leading-none text-gradient-cyan-purple"
                 >Blockchain Finder</span
               >
             </div>
-            <p class="px-3 font-light text-left text-[14px] pb-2">
+            <p class="px-3 font-light text-left text-[14px] pb-2 text-[#FFF8EA]">
               Project created during my job as a Transaction Auditor to
               facilitate finding the relevant network of a given txID or deposit
               address.
@@ -461,14 +470,14 @@
               <a
                 href="https://blockchainfinder.site"
                 target="_blank"
-                class="px-4 py-2 min-w-[90px] rounded-md bg-[#594545] text-[#FFF8EA] text-sm font-medium border border-[#FFF8EA] hover:bg-white/20 transition text-center"
+                class="btn-primary-gradient px-4 py-2 min-w-[90px] text-sm text-center"
               >
                 Live
               </a>
               <a
                 href="https://github.com/leticarolina/crypto-return"
                 target="_blank"
-                class="px-4 py-2 min-w-[90px] rounded-md bg-[#594545] text-[#FFF8EA] text-sm font-medium border border-[#FFF8EA] hover:bg-white/20 transition text-center"
+                class="btn-outline-cyan px-4 py-2 min-w-[90px] text-sm text-center"
               >
                 Github
               </a>
@@ -476,46 +485,38 @@
 
             <!-- Tags -->
             <div class="flex justify-center gap-2">
-              <span
-                class="bg-[rgba(255,248,234,0.2)] text-[#FFF8EA] px-2 py-[2px] text-[11px] uppercase font-medium rounded-sm"
-              >
-                Frontend
-              </span>
-              <span
-                class="bg-[rgba(255,248,234,0.2)] text-[#FFF8EA] px-2 py-[2px] text-[11px] uppercase font-medium rounded-sm"
-              >
-                React/Next.js
-              </span>
+              <span class="tag-chip">Frontend</span>
+              <span class="tag-chip">React/Next.js</span>
             </div>
           </div>
         </div>
 
-        
+
 
         <!-- Coming soon (disabled) -->
-        <!-- 
+        <!--
         <div
-          class="card transition-all duration-200 w-[280px] h-[410px] m-5 p-2 border border-[#FFF8EA] hover:-translate-y-4 hover:shadow-[0_18px_28px_rgba(255,248,234,0.6),0_12px_14px_rgba(255,248,234,0.5)]"
+          class="glass-card w-[280px] h-[410px] m-5 p-3"
         >
           <div
             class="pt-2 flex flex-col h-[380px] justify-between items-center text-center"
           >
-     
+
             <div
-              class="w-[250px] h-[160px] border border-[#9E7676] flex items-center justify-center"
+              class="w-[250px] h-[160px] card-title-box flex items-center justify-center"
             >
               <span
-                class="text-left font-['Antonio',sans-serif] font-bold text-[55px] tracking-[1px] leading-none"
+                class="text-left font-['Antonio',sans-serif] font-bold text-[55px] tracking-[1px] leading-none text-gradient-cyan-purple"
                 >DeFi Stablecoin</span
               >
             </div>
-            <p class="px-3 font-light text-left text-[16px] pb-2">
+            <p class="px-3 font-light text-left text-[16px] pb-2 text-[#D1AEAE]">
               Coming soon… currently developing.
             </p>
             <div class="flex gap-4 justify-center mt-2">
-          
+
               <span
-                class="px-4 py-2 min-w-[90px] rounded-md bg-gray-300/40 text-white text-sm font-medium border border-gray-400/50 cursor-not-allowed text-center"
+                class="btn-disabled px-4 py-2 min-w-[90px] text-sm text-center"
               >
                 Live
               </span>
@@ -523,28 +524,16 @@
               <a
                 href="https://github.com/leticarolina/defi-stablecoin"
                 target="_blank"
-                class="px-4 py-2 min-w-[90px] rounded-md bg-[#594545] text-[#FFF8EA] text-sm font-medium border border-[#FFF8EA] hover:bg-white/20 transition text-center"
+                class="btn-outline-cyan px-4 py-2 min-w-[90px] text-sm text-center"
               >
                 Github
               </a>
             </div>
 
             <div class="flex justify-center gap-2">
-              <span
-                class="bg-[rgba(255,248,234,0.2)] text-[#FFF8EA] px-2 py-[2px] text-[11px] uppercase font-medium rounded-sm"
-              >
-                Solidity
-              </span>
-              <span
-                class="bg-[rgba(255,248,234,0.2)] text-[#FFF8EA] px-2 py-[2px] text-[11px] uppercase font-medium rounded-sm"
-              >
-                Foundry
-              </span>
-              <span
-                class="bg-[rgba(255,248,234,0.2)] text-[#FFF8EA] px-2 py-[2px] text-[11px] uppercase font-medium rounded-sm"
-              >
-                React.js
-              </span>
+              <span class="tag-chip">Solidity</span>
+              <span class="tag-chip">Foundry</span>
+              <span class="tag-chip">React.js</span>
             </div>
           </div>
         </div> -->
@@ -556,7 +545,7 @@
           <img
             src="pictures/arrow.svg"
             alt="Arrow icon"
-            class="rotate-180 h-8 w-8 text-[#9E7676]"
+            class="rotate-180 h-8 w-8 arrow-cyan"
           />
         </a>
       </div>
@@ -567,16 +556,16 @@
       <div
         class="section-container max-w-5xl mx-auto px-6 md:flex md:items-start md:gap-10"
       >
- 
+
         <!-- Text + boxes -->
         <div class="about-me-container flex-1">
           <div class="about-title text-center md:text-left mb-8">
             <p
-              class="pretitle text-[16px] text-[#AF8B8B] font-['Taviraj',serif]"
+              class="pretitle text-[13px] text-[#AF8B8B] font-['El_Messiri'] tracking-[0.2em] uppercase"
             >
               Get To Know
             </p>
-            <h1 class="title text-[35px] font-['Taviraj',serif] font-bold">
+            <h1 class="title text-[35px] font-['Antonio',sans-serif] font-bold text-[#FFF8EA]">
               About Me
             </h1>
           </div>
@@ -585,7 +574,7 @@
           <div class="boxes-social-media flex flex-col gap-4 mb-6">
             <div class="about-boxes grid grid-cols-1 sm:grid-cols-2 gap-4">
               <!-- Experience -->
-              <div class="box-details-container border border-[#9E7676] p-4">
+              <div class="box-details-container skill-box p-4">
                 <h3 class="text-lg font-semibold mb-1 text-[#AF8B8B]">
                   Experience
                 </h3>
@@ -594,7 +583,7 @@
                 </p>
               </div>
               <!-- Main Skills -->
-              <div class="box-details-container border border-[#9E7676] p-4">
+              <div class="box-details-container skill-box p-4">
                 <h3 class="text-lg font-semibold mb-1 text-[#AF8B8B]">
                   Stack
                 </h3>
@@ -606,19 +595,19 @@
 
             <!-- Extra skills row -->
             <div class="about-boxes grid grid-cols-1 sm:grid-cols-3 gap-4">
-              <div class="box-details-container border border-[#9E7676] p-4">
+              <div class="box-details-container skill-box p-4">
                 <h3 class="text-lg font-semibold mb-1 text-[#AF8B8B]">
                   Web3 Frontend
                 </h3>
                 <p class="text-sm leading-snug">ethers.js, wagmi, wallet UX</p>
               </div>
-              <div class="box-details-container border border-[#9E7676] p-4">
+              <div class="box-details-container skill-box p-4">
                 <h3 class="text-lg font-semibold mb-1 text-[#AF8B8B]">
                   Smart Contracts
                 </h3>
                 <p class="text-sm leading-snug">testing, fuzzing tests, gas, security first</p>
               </div>
-              <div class="box-details-container border border-[#9E7676] p-4">
+              <div class="box-details-container skill-box p-4">
                 <h3 class="text-lg font-semibold mb-1 text-[#AF8B8B]">
                   Skills
                 </h3>
@@ -630,17 +619,17 @@
           <!-- Bio -->
           <div class="about-text-container mb-4">
             <p class="bio text-[16px] leading-relaxed">
-              I’m Letícia, a web3 Developer focused on writing and deploying
-              <span class="highlight text-[#D1AEAE]">smart contracts</span>.
-              Since 2021 I’ve been working with
-              <span class="highlight text-[#D1AEAE]">blockchain</span> and
-              <span class="highlight text-[#D1AEAE]">Crypto</span>. I enjoy the
+              I'm Letícia, a web3 Developer focused on writing and deploying
+              <span class="highlight text-[#AF8B8B]">smart contracts</span>.
+              Since 2021 I've been working with
+              <span class="highlight text-[#AF8B8B]">blockchain</span> and
+              <span class="highlight text-[#AF8B8B]">Crypto</span>. I enjoy the
               full loop: designing contract architecture, writing thorough
               tests, and shipping a responsive, accessible UI that feels good to
               use. <br />
-              I have many years working in the crypto industry, and recently I’ve been focused on writing clean Solidity code,
+              I have many years working in the crypto industry, and recently I've been focused on writing clean Solidity code,
               use Foundry to cover test suites, and connect wallet flow on the frontend. When
-              I’m not coding, I’m probably exploring a new café, at the beach or
+              I'm not coding, you'll find me at the beach or
               playing Tennis.
             </p>
           </div>
@@ -648,7 +637,7 @@
           <!-- CV button -->
           <div class="mt-6">
             <button
-              class="rounded-md button-cv w-44 border border-[#AF8B8B] text-[#AF8B8B] hover:bg-white/10 px-4 py-2"
+              class="btn-outline-cyan button-cv w-44 px-4 py-2"
             >
               Open my CV
             </button>
@@ -657,29 +646,29 @@
       </div>
     </section>
 
-    <footer id="contact-me" class="mt-16 bg-[#815B5B] text-[#FFF8EA]">
+    <footer id="contact-me" class="mt-16 bg-[#3a2626] text-[#FFF8EA] border-t border-[rgba(255,248,234,0.10)]">
       <div class="contact max-w-5xl mx-auto px-6 py-10">
         <div class="contact-title text-center mb-6">
-          <p class="pretitle text-[16px] text-[#AF8B8B] font-['Taviraj',serif]">
+          <p class="pretitle text-[13px] text-[#AF8B8B] font-['El_Messiri'] tracking-[0.2em] uppercase">
             Get in touch
           </p>
-          <h1 class="title text-[32px] font-['Taviraj',serif]">Contact me</h1>
+          <h1 class="title text-[32px] font-['Antonio',sans-serif] text-[#FFF8EA]">Contact me</h1>
         </div>
 
         <!-- Contact rows -->
         <div
-          class="contact-info-container max-w-xl mx-auto flex flex-col sm:flex-row items-center justify-center gap-6 border border-[#AE8D8D] p-3"
+          class="contact-info-container max-w-xl mx-auto flex flex-col sm:flex-row items-center justify-center gap-6 contact-glass-box p-6"
         >
           <div class="contact-email-container inline-flex items-center gap-3">
             <img
               src="pictures/email.svg"
               alt="Email icon"
-              class="icons h-[45px]"
+              class="icons h-[45px] icon-light"
             />
             <p>
               <a
                 href="mailto:leticiac@email.com"
-                class="hover:underline underline-offset-4"
+                class="hover:underline underline-offset-4 hover:text-[#FFF8EA] transition-colors"
                 >Leticiac@email.com</a
               >
             </p>
@@ -688,13 +677,13 @@
             <img
               src="pictures/linkedin.svg"
               alt="LinkedIn icon"
-              class="icons h-[42px]"
+              class="icons h-[42px] icon-light"
             />
             <p>
               <a
                 href="https://www.linkedin.com/in/leti-azevedo/"
                 target="_blank"
-                class="hover:underline underline-offset-4"
+                class="hover:underline underline-offset-4 hover:text-[#FFF8EA] transition-colors"
                 >LinkedIn</a
               >
             </p>
@@ -708,17 +697,17 @@
               <li>
                 <a
                   href="#desktop-nav"
-                  class="hover:underline underline-offset-4"
+                  class="hover:underline underline-offset-4 hover:text-[#FFF8EA] transition-colors text-[#D1AEAE]"
                   >Home</a
                 >
               </li>
               <li>
-                <a href="#about" class="hover:underline underline-offset-4"
+                <a href="#about" class="hover:underline underline-offset-4 hover:text-[#FFF8EA] transition-colors text-[#D1AEAE]"
                   >About</a
                 >
               </li>
               <li>
-                <a href="#projects" class="hover:underline underline-offset-4"
+                <a href="#projects" class="hover:underline underline-offset-4 hover:text-[#FFF8EA] transition-colors text-[#D1AEAE]"
                   >Projects</a
                 >
               </li>
@@ -726,7 +715,7 @@
           </div>
         </nav>
 
-        <p class="copyright text-center text-[#AF8B8B] mt-6">
+        <p class="copyright text-center text-[#9E7676] mt-6 text-[13px]">
           © 2023 Leticia Azevedo. All rights reserved.
         </p>
       </div>
