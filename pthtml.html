@@ -125,21 +125,22 @@
       </h1>
 
       <!-- TAGLINE -->
-      <h1 class="lg:flex font-extrabold leading-none tracking-tight ml-16 md:ml-48">
-        <span class="font-light not-italic text-[#D1AEAE] text-[22px] md:text-[26px] tracking-[0.12em] font-['El_Messiri'] block mt-2">
-          <span>Desenvolvedora Web3 Solidity</span>
+      <h1 class="lg:flex font-extrabold leading-none tracking-tight ml-0 lg:ml-48">
+        <span class="font-light not-italic text-[#D1AEAE] text-[22px] md:text-[26px] tracking-[0.09em] block mt-[90px] md:mt-4">
+          <span class="block text-[22px] md:text-[26px] text-[#FFF8EA] mb-2 italic lg:whitespace-nowrap">Escrevo código que protege dinheiro</span>
+          <span class="font-['El_Messiri'] block text-[14px] md:text-[15px] tracking-[0.15em] mt-1 text-[#D1AEAE] uppercase">Desenvolvedora Web3 Solidity</span>
         </span>
       </h1>
 
       <!-- BUTTONS -->
-      <div class="mt-8 lg:mt-16 flex gap-5 text-white lg:ml-40">
+      <div class="mt-8 lg:mt-16 flex gap-5 text-white">
         <a
           href="https://github.com/leticarolina"
           target="_blank"
           rel="noreferrer"
           class="btn-ghost inline-flex items-center gap-2 px-3 py-2 justify-center glow-cyan-hover transition"
         >
-          <img src="pictures/github.svg" alt="GitHub" class="h-7 w-7 icon-light" />
+          <img src="pictures/github.svg" alt="GitHub" class="h-8 w-8 icon-light" />
 
         </a>
 
@@ -149,7 +150,7 @@
           rel="noreferrer"
           class="btn-ghost inline-flex items-center gap-2 px-3 py-2 justify-center glow-cyan-hover transition"
         >
-          <img src="pictures/linkedin.svg" alt="LinkedIn" class="h-7 w-7 icon-light" />
+          <img src="pictures/linkedin.svg" alt="LinkedIn" class="h-8 w-8 icon-light" />
           <!-- <span>LinkedIn</span> -->
         </a>
 
@@ -159,7 +160,7 @@
         rel="noreferrer"
         class="btn-ghost inline-flex items-center gap-2 px-3 py-2 justify-center glow-cyan-hover transition"
       >
-        <img src="pictures/x.svg" alt="X" class="h-7 w-7 icon-light" />
+        <img src="pictures/x.svg" alt="X" class="h-8 w-8 icon-light" />
       </a>
       </div>
     </div>
@@ -534,7 +535,7 @@
     </section>
 
     <!-- SOBRE -->
-    <section id="about" class="relative py-16">
+    <section id="about" class="relative py-16 bg-[#3a2626]">
       <div
         class="section-container max-w-5xl mx-auto px-6 md:flex md:items-start md:gap-10"
       >
@@ -550,47 +551,51 @@
             </h1>
           </div>
 
-          <div class="boxes-social-media flex flex-col gap-4 mb-6">
-            <div class="about-boxes grid grid-cols-1 sm:grid-cols-2 gap-4">
-              <div class="box-details-container skill-box p-4">
-                <h3 class="text-lg font-semibold mb-1 text-[#AF8B8B]">
-                  Experiência
-                </h3>
-                <p class="text-sm leading-snug">
-                  3+ anos em <br />UX, DeFi, Cripto e Blockchain
-                </p>
-              </div>
-
-              <div class="box-details-container skill-box p-4">
-                <h3 class="text-lg font-semibold mb-1 text-[#AF8B8B]">
-                  Habilidades
-                </h3>
-                <p class="text-sm leading-snug">
-                  Solidity / Foundry <br />JavaScript / React / Tailwind
-                </p>
+          <!-- Timeline -->
+          <div class="timeline">
+            <div class="timeline-item">
+              <div class="timeline-content">
+                <span class="timeline-label"><span class="timeline-dot"></span>2021-2023 — Binance</span>
+                <p class="timeline-title">Auditora de Transações</p>
+                <p class="timeline-body">Dois anos acompanhando dinheiro desaparecer on-chain — depósitos falhos, padrões de esvaziamento, casos extremos que ninguém previu. Auditar transações reais em escala me ensinou exatamente como sistemas on-chain falham.</p>
               </div>
             </div>
-
-            <div class="about-boxes grid grid-cols-1 sm:grid-cols-3 gap-4">
-              <div class="box-details-container skill-box p-4">
-                <h3 class="text-lg font-semibold mb-1 text-[#AF8B8B]">
-                  Frontend Web3
-                </h3>
-                <p class="text-sm leading-snug">
-                  ethers.js, wagmi, UX de carteira
+            <div class="timeline-item">
+              <div class="timeline-content">
+                <span class="timeline-label"><span class="timeline-dot"></span>2024 — OKX</span>
+                <p class="timeline-title">Suporte Cripto Sênior</p>
+                <p class="timeline-body">Aprofundei meu entendimento sobre infraestrutura de carteiras, comportamento cross-chain e o que acontece quando usuários interagem com sistemas que não foram feitos para eles.</p>
+              </div>
+            </div>
+            <div class="timeline-item">
+              <div class="timeline-content">
+                <span class="timeline-label"><span class="timeline-dot"></span>2024 — Primeiro Smart Contract</span>
+                <p class="timeline-title">Comecei a construir em Solidity</p>
+                <p class="timeline-body">Decidi construir os sistemas que passei anos vendo quebrar. Comecei com o básico e avancei rápido — primitivos DeFi, stablecoins, NFTs, proxies atualizáveis.</p>
+              </div>
+            </div>
+            <div class="timeline-item">
+              <div class="timeline-content">
+                <span class="timeline-label"><span class="timeline-dot"></span>2025 — Desenvolvedora Smart Contract</span>
+                <p class="timeline-title">Três protocolos, um ano</p>
+                <p class="timeline-body">Implantei uma rifa integrada ao Chainlink, uma stablecoin sobre-colateralizada com lógica de liquidação e um protocolo de identidade na mainnet do World Chain. Todos ao vivo.</p>
+              </div>
+            </div>
+            <div class="timeline-item">
+              <div class="timeline-content">
+                <span class="timeline-label"><span class="timeline-dot"></span>2026 — Hackathon Monad</span>
+                <p class="timeline-title inline-flex items-center gap-2">
+                  <img src="pictures/winner.svg" alt="" class="h-[18px] w-[18px] icon-gold" />
+                  1º lugar com LockFi
                 </p>
+                <p class="timeline-body">Construí um cofre de segurança que detecta saques suspeitos antes de executá-los. Tudo que aprendi sobre como o dinheiro é roubado foi para dentro deste projeto.</p>
               </div>
-              <div class="box-details-container skill-box p-4">
-                <h3 class="text-lg font-semibold mb-1 text-[#AF8B8B]">
-                  Smart Contracts
-                </h3>
-                <p class="text-sm leading-snug">testes, gás, segurança</p>
-              </div>
-              <div class="box-details-container skill-box p-4">
-                <h3 class="text-lg font-semibold mb-1 text-[#AF8B8B]">
-                  Conhecimentos
-                </h3>
-                <p class="text-sm leading-snug">Chainlink Oracles, NFT's, UUPS, Signatures, VRF</p>
+            </div>
+            <div class="timeline-item">
+              <div class="timeline-content">
+                <span class="timeline-label"><span class="timeline-dot timeline-dot--now"></span>Agora</span>
+                <p class="timeline-title">Construindo infraestrutura de segurança on-chain</p>
+                <p class="timeline-body">Baseada no Brasil. Implantando em Ethereum, Monad, World Chain e Stellar. Quando não estou codando, estou na praia ou na quadra de tênis.</p>
               </div>
             </div>
           </div>
