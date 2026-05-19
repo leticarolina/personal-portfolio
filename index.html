@@ -127,21 +127,22 @@
       </h1>
 
       <!-- TAGLINE -->
-      <h1 class="lg:flex font-extrabold leading-none tracking-tight ml-16 md:ml-48">
-        <span class="font-light not-italic text-[#D1AEAE] text-[22px] md:text-[26px] tracking-[0.12em] font-['El_Messiri'] block mt-2">
-          <span>Web3 Solidity Developer</span>
+      <h1 class="lg:flex font-extrabold leading-none tracking-tight ml-0 lg:ml-48">
+        <span class="font-light not-italic text-[#D1AEAE] text-[22px] md:text-[26px] tracking-[0.09em] block mt-[90px] md:mt-4">
+          <span class="block text-[22px] md:text-[26px] text-[#FFF8EA] mb-2 italic lg:whitespace-nowrap">I write code that protects money</span>
+          <span class="font-['El_Messiri'] block text-[14px] md:text-[15px] tracking-[0.15em] mt-1 text-[#D1AEAE] uppercase">Web3 Solidity Developer</span>
         </span>
       </h1>
 
       <!-- BUTTONS -->
-      <div class="mt-8 lg:mt-16 flex gap-5 text-white lg:ml-40">
+      <div class="mt-8 lg:mt-16 flex gap-5 text-white">
         <a
           href="https://github.com/leticarolina"
           target="_blank"
           rel="noreferrer"
           class="btn-ghost inline-flex items-center gap-2 px-3 py-2 justify-center glow-cyan-hover transition"
         >
-          <img src="pictures/github.svg" alt="GitHub" class="h-7 w-7 icon-light" />
+          <img src="pictures/github.svg" alt="GitHub" class="h-8 w-8 icon-light" />
 
         </a>
 
@@ -151,7 +152,7 @@
           rel="noreferrer"
           class="btn-ghost inline-flex items-center gap-2 px-3 py-2 justify-center glow-cyan-hover transition"
         >
-          <img src="pictures/linkedin.svg" alt="LinkedIn" class="h-7 w-7 icon-light" />
+          <img src="pictures/linkedin.svg" alt="LinkedIn" class="h-8 w-8 icon-light" />
         </a>
 
         <a
@@ -160,7 +161,7 @@
         rel="noreferrer"
         class="btn-ghost inline-flex items-center gap-2 px-3 py-2 justify-center glow-cyan-hover transition"
       >
-        <img src="pictures/x.svg" alt="X" class="h-7 w-7 icon-light" />
+        <img src="pictures/x.svg" alt="X" class="h-8 w-8 icon-light" />
       </a>
       </div>
     </div>
@@ -232,9 +233,9 @@
                   >LockFi</span
                 >
               </div>
-              <p class="px-3 font-light text-left text-[14px] pb-2 text-[#FFF8EA]">
-                LockFi is a smart safe that detects suspicious withdrawals and adds a waiting time and cancellation option to them, helping users avoid quick loss of funds.
-              </p>
+              <p class="px-2 mt-2 font-light text-left text-[14px] pb-2 text-[#FFF8EA]">
+               Security layer for self-custody that detects suspicious withdrawal patterns like large transfers and drain attempts, holding assets in a cancellable queue before execution.
+                            </p>
               <div class="flex gap-4 justify-center mt-2">
                 <a
                 href="https://lock-fi.vercel.app/"
@@ -257,7 +258,7 @@
               </div>
             </div>
           </div>
-        <!-- Card -->
+ 
 
         
         <div
@@ -271,8 +272,52 @@
               class="w-[250px] h-[160px] card-title-box flex items-center justify-center bg-[#4a3535]"
             >
               <span
+                class="text-left font-['Antonio',sans-serif] font-bold text-[55px] tracking-[1px] leading-none text-gradient-cyan-purple"
+                >Watchdog</span
+              >
+            </div>
+            <p class="px-3 font-light text-left text-[14px] pb-2 mt-2 text-[#FFF8EA]">
+              Every agent wallet needs a spending policy. Watchdog is a smart contract that acts as a behavioral risk layer between an agent and the payments.  </p>
+
+            <div class="flex gap-4 justify-center mt-2">
+              <a
+              href="https://watchdog-agent.vercel.app/"
+              target="_blank"
+              class="btn-primary-gradient px-4 py-2 min-w-[90px] text-sm text-center"
+            >
+              Live
+            </a>
+              <a
+                href="https://github.com/leticarolina/watchdog"
+                target="_blank"
+                class="btn-outline-cyan px-4 py-2 min-w-[90px] text-sm text-center"
+              >
+                Github
+              </a>
+            </div>
+
+            <!-- Tags -->
+            <div class="flex justify-center gap-2 mt-2">
+              <span class="tag-chip">x402</span>
+              <span class="tag-chip">Stellar</span>
+              <span class="tag-chip">AI Infra</span>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="glass-card w-[280px] h-[410px] m-5 p-3 border-[#FFF8EA] "
+        >
+          <div
+            class="pt-2 flex flex-col h-[380px] justify-between items-center text-center"
+          >
+            <!-- Title block -->
+            <div
+              class="w-[250px] h-[160px] card-title-box flex items-center justify-center bg-[#4a3535]"
+            >
+              <span
                 class="text-left font-['Antonio',sans-serif] font-bold text-[55px] tracking-[1px] leading-none text-gradient-cyan-purple "
-                >Smart Marriage</span
+                >Human Bond</span
               >
             </div>
             <p class="px-3 font-light text-left text-[14px] pb-2 mt-2 text-[#FFF8EA]">
@@ -280,11 +325,13 @@
             </p>
 
             <div class="flex gap-4 justify-center mt-2">
-              <!-- <span
-              class="btn-disabled px-4 py-2 min-w-[90px] text-sm text-center"
+              <a
+              href="https://world.org/mini-app?app_id=app_bfc3261816aeadc589f9c6f80a98f5df"
+              target="_blank"
+              class="btn-primary-gradient px-4 py-2 min-w-[90px] text-sm text-center"
             >
-              Live App soon
-            </span> -->
+              World Miniapp
+            </a>
               <a
                 href="https://github.com/leticarolina/worldid-marriage-protocol"
                 target="_blank"
@@ -394,54 +441,6 @@
             </div>
           </div>
         </div>
-
-        <div
-          class="glass-card w-[280px] h-[410px] m-5 p-3 border-[#FFF8EA]"
-        >
-          <div
-            class="pt-2 flex flex-col h-[380px] justify-between items-center text-center"
-          >
-            <!-- Title block -->
-            <div
-              class="w-[250px] h-[160px] card-title-box flex items-center justify-center  bg-[#4a3535]"
-            >
-              <span
-                class="text-left font-['Antonio',sans-serif] font-bold text-[55px] tracking-[1px] leading-none text-gradient-cyan-purple"
-                >Fund Me Portal</span
-              >
-            </div>
-            <p class="px-3 font-light text-left text-[14px] pb-2 mt-2 text-[#FFF8EA]">
-              First smart contract deployed while shaping my path in Web3. A
-              My personal funding portal deployed on Arbitrum where anyone can send ETH directly. Try it out and
-              support!
-            </p>
-
-            <div class="flex gap-4 justify-center mt-2">
-              <a
-                href="https://fundme-contract.vercel.app/"
-                target="_blank"
-                class="btn-primary-gradient px-4 py-2 min-w-[90px] text-sm text-center"
-              >
-                Live
-              </a>
-              <a
-                href="https://github.com/leticarolina/fundme-contract"
-                target="_blank"
-                class="btn-outline-cyan px-4 py-2 min-w-[90px] text-sm text-center"
-              >
-                Github
-              </a>
-            </div>
-
-            <!-- Tags -->
-            <div class="flex justify-center gap-2 mt-4">
-              <span class="tag-chip">Solidity</span>
-              <span class="tag-chip">Foundry</span>
-              <span class="tag-chip">React.js</span>
-            </div>
-          </div>
-        </div>
-
   
 
         <!-- Card -->
@@ -461,7 +460,7 @@
               >
             </div>
             <p class="px-3 font-light text-left text-[14px] pb-2 text-[#FFF8EA]">
-              Project created during my job as a Transaction Auditor to
+              Project created in 2023 during my job as a Transaction Auditor @Binance to
               facilitate finding the relevant network of a given txID or deposit
               address.
             </p>
@@ -552,7 +551,7 @@
     </section>
 
     <!-- ABOUT ME -->
-    <section id="about" class="relative py-16">
+    <section id="about" class="relative py-16 bg-[#3a2626]">
       <div
         class="section-container max-w-5xl mx-auto px-6 md:flex md:items-start md:gap-10"
       >
@@ -570,70 +569,57 @@
             </h1>
           </div>
 
-          <!-- Boxes -->
-          <div class="boxes-social-media flex flex-col gap-4 mb-6">
-            <div class="about-boxes grid grid-cols-1 sm:grid-cols-2 gap-4">
-              <!-- Experience -->
-              <div class="box-details-container skill-box p-4">
-                <h3 class="text-lg font-semibold mb-1 text-[#AF8B8B]">
-                  Experience
-                </h3>
-                <p class="text-sm leading-snug">
-                  4+ years in <br />User Experience, DeFi, Crypto, & Blockchain
-                </p>
-              </div>
-              <!-- Main Skills -->
-              <div class="box-details-container skill-box p-4">
-                <h3 class="text-lg font-semibold mb-1 text-[#AF8B8B]">
-                  Stack
-                </h3>
-                <p class="text-sm leading-snug">
-                  Solidity / Foundry<br />JavaScript / React / Tailwind
-                </p>
+          <!-- Timeline -->
+          <div class="timeline">
+            <div class="timeline-item">
+              <div class="timeline-content">
+                <span class="timeline-label"><span class="timeline-dot"></span>2021-2023 — Binance</span>
+                <p class="timeline-title">Transaction Auditor</p>
+                <p class="timeline-body">Spent two years watching money disappear onchain by failed deposits, drain patterns, edge cases that nobody planned for. Auditing real transactions at scale taught me exactly how onchain systems fail.</p>
               </div>
             </div>
-
-            <!-- Extra skills row -->
-            <div class="about-boxes grid grid-cols-1 sm:grid-cols-3 gap-4">
-              <div class="box-details-container skill-box p-4">
-                <h3 class="text-lg font-semibold mb-1 text-[#AF8B8B]">
-                  Web3 Frontend
-                </h3>
-                <p class="text-sm leading-snug">ethers.js, wagmi, wallet UX</p>
-              </div>
-              <div class="box-details-container skill-box p-4">
-                <h3 class="text-lg font-semibold mb-1 text-[#AF8B8B]">
-                  Smart Contracts
-                </h3>
-                <p class="text-sm leading-snug">testing, fuzzing tests, gas, security first</p>
-              </div>
-              <div class="box-details-container skill-box p-4">
-                <h3 class="text-lg font-semibold mb-1 text-[#AF8B8B]">
-                  Skills
-                </h3>
-                <p class="text-sm leading-snug">Chainlink Oracles, NFT's, UUPS, Signatures, VRF</p>
+            <div class="timeline-item">
+              <div class="timeline-content">
+                <span class="timeline-label"><span class="timeline-dot"></span>2024 — OKX</span>
+                <p class="timeline-title">Senior Crypto Support</p>
+                <p class="timeline-body">Deepened my understanding of wallet infrastructure, cross-chain behavior, and what happens when users interact with systems that weren't built with them in mind.</p>
               </div>
             </div>
-          </div>
-
-          <!-- Bio -->
-          <div class="about-text-container mb-4">
-            <p class="bio text-[16px] leading-relaxed">
-              I'm Letícia, a web3 Developer focused on writing and deploying
-              <span class="highlight text-[#AF8B8B]">smart contracts</span>.
-              Since 2021 I've been working with
-              <span class="highlight text-[#AF8B8B]">blockchain</span> and
-              <span class="highlight text-[#AF8B8B]">Crypto</span>. I enjoy the
-              full loop: designing contract architecture, writing thorough
-              tests, and shipping a responsive, accessible UI that feels good to
-              use. <br />
-              I spent several years working in the crypto industry, where I developed a strong sense for security, reliability, and user-focused design that I now bring into building smart contracts and Web3 applications. 
-              When I'm not coding, you'll find me at the beach or playing Tennis.
-            </p>
+            <div class="timeline-item">
+              <div class="timeline-content">
+                <span class="timeline-label"><span class="timeline-dot"></span>2024 — First Smart Contract deployed</span>
+                <p class="timeline-title">Started building in Solidity</p>
+                <p class="timeline-body">Started writing Solidity. Decided to build the systems instead of watching them break.</p>
+              </div>
+            </div>
+            <div class="timeline-item">
+              <div class="timeline-content">
+                <span class="timeline-label"><span class="timeline-dot"></span>2025 — Smart Contract Developer</span>
+                <p class="timeline-title">Three protocols, one year</p>
+                <p class="timeline-body">Deployed a Chainlink-integrated raffle, an overcollateralized stablecoin with liquidation logic, and an identity protocol on World Chain mainnet.</p>
+              </div>
+            </div>
+            <div class="timeline-item">
+              <div class="timeline-content">
+                <span class="timeline-label"><span class="timeline-dot"></span>2026 — Monad Hackathon</span>
+                <p class="timeline-title inline-flex items-center gap-2">
+                  <img src="pictures/winner.svg" alt="" class="h-[18px] w-[18px] icon-gold" />
+                  1st place with LockFi
+                </p>
+                <p class="timeline-body">Built a security vault that catches suspicious withdrawals before they execute. Everything I learned watching money get stolen went into this.</p>
+              </div>
+            </div>
+            <div class="timeline-item">
+              <div class="timeline-content">
+                <span class="timeline-label"><span class="timeline-dot timeline-dot--now"></span>Now</span>
+                <p class="timeline-title">Building onchain security infrastructure</p>
+                <p class="timeline-body">Deploying across Ethereum, Monad, World Chain, Stellar. When I'm not coding you'll find me at the beach or playing tennis.</p>
+              </div>
+            </div>
           </div>
 
           <!-- CV button -->
-          <div class="mt-6">
+          <div class="mt-10">
             <button
               class="btn-outline-cyan button-cv w-44 px-4 py-2"
             >
