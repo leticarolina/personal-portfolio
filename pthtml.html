@@ -66,7 +66,7 @@
           src="pictures/translate-26.svg"
           alt="Arrow icon"
           id="translate-menu-icon"
-          class="h-[30px] w-[30px] hover:scale-110 transition-transform icon-light"
+          class="h-[30px] w-[30px] hover:scale-110 transition-transform"
         />
       </div>
     </nav>
@@ -100,7 +100,7 @@
           src="pictures/translate-26.svg"
           alt="Translate"
           id="translate-menu-icon"
-          class="h-[28px] w-[28px] hover:scale-110 transition-transform icon-light"
+          class="h-[28px] w-[28px] hover:scale-110 transition-transform"
         />
       </button>
     </nav>
@@ -151,7 +151,6 @@
           class="btn-ghost inline-flex items-center gap-2 px-3 py-2 justify-center glow-cyan-hover transition"
         >
           <img src="pictures/linkedin.svg" alt="LinkedIn" class="h-8 w-8 icon-light" />
-          <!-- <span>LinkedIn</span> -->
         </a>
 
         <a
@@ -206,7 +205,6 @@
       <div
         class="projects-container flex justify-center flex-wrap px-4 py-5 w-full"
       >
-
            <!-- Card: LockFi -->
            <div
            class="glass-card w-[280px] h-[410px] m-5 p-3 relative border-[#FFF8EA]"
@@ -230,7 +228,7 @@
                >
              </div>
              <p class="px-3 font-light text-left text-[14px] pb-2 text-[#FFF8EA]">
-              LockFi é um cofre inteligente que detecta saques suspeitos e adiciona um tempo de espera e opção de cancelamento, ajudando a evitar perdas rápidas de fundos.             </p>
+              Um cofre de segurança que retém saques suspeitos em uma fila cancelável antes da execução, detectando tentativas de scams e drains antes que seja tarde demais. Suas cryptos protegidas. </p>
              <div class="flex gap-4 justify-center mt-2">
               <a
               href="https://lock-fi.vercel.app/"
@@ -254,6 +252,49 @@
            </div>
          </div>
 
+         <div
+          class="glass-card w-[280px] h-[410px] m-5 p-3 border-[#FFF8EA] "
+        >
+          <div
+            class="pt-2 flex flex-col h-[380px] justify-between items-center text-center"
+          >
+            <!-- Title block -->
+            <div
+              class="w-[250px] h-[160px] card-title-box flex items-center justify-center bg-[#4a3535]"
+            >
+              <span
+                class="text-left font-['Antonio',sans-serif] font-bold text-[55px] tracking-[1px] leading-none text-gradient-cyan-purple"
+                >Watchdog</span
+              >
+            </div>
+            <p class="px-3 font-light text-left text-[14px] pb-2 mt-2 text-[#FFF8EA]">
+              Agentes de IA já podem ter carteiras e gastar de forma autônoma. Watchdog é o smart contract que define políticas de gastos e impede pagamentos não autorizados antes de executá-los.</p>
+
+            <div class="flex gap-4 justify-center mt-2">
+              <a
+              href="https://watchdog-agent.vercel.app/"
+              target="_blank"
+              class="btn-primary-gradient px-4 py-2 min-w-[90px] text-sm text-center"
+            >
+              Site
+            </a>
+              <a
+                href="https://github.com/leticarolina/watchdog"
+                target="_blank"
+                class="btn-outline-cyan px-4 py-2 min-w-[90px] text-sm text-center"
+              >
+                Github
+              </a>
+            </div>
+
+            <!-- Tags -->
+            <div class="flex justify-center gap-2 mt-2">
+              <span class="tag-chip">x402</span>
+              <span class="tag-chip">Stellar</span>
+              <span class="tag-chip">AI Infra</span>
+            </div>
+          </div>
+        </div>
       <div
       class="glass-card w-[280px] h-[410px] m-5 p-3 border-[#FFF8EA]"
     >
@@ -266,19 +307,14 @@
         >
           <span
             class="text-left font-['Antonio',sans-serif] font-bold text-[55px] tracking-[1px] leading-none text-gradient-cyan-purple"
-            >Smart Marriage</span
+            >Human Bond</span
           >
         </div>
         <p class="px-3 font-light text-left text-[14px] pb-2 mt-2 text-[#FFF8EA]">
-        Um casamento na blockchain, onde 2 humanos verificados via World ID podem formar um laço e ganhar juros diários + NFT's personalizados.
+          Dois humanos verificados pela World ID, um vínculo ZK onchain. Usuários acumulam token chamado <i>TIME</i> como yield diário e desbloqueiam NFTs como registro dos marcos do relacionamento.
         </p>
 
         <div class="flex gap-4 justify-center mt-2 ">
-          <!-- <span
-          class="btn-disabled px-4 py-2 min-w-[90px] text-sm text-center"
-        >
-          App em breve
-        </span> -->
           <a
             href="https://github.com/leticarolina/worldid-marriage-protocol"
             target="_blank"
@@ -297,9 +333,7 @@
       </div>
     </div>
         <!-- Card -->
-        
-
-
+      
         <div
           class="glass-card w-[280px] h-[410px] m-5 p-3 border-[#FFF8EA]"
         >
@@ -361,8 +395,7 @@
               >
             </div>
             <p class="px-3 font-light text-left text-[14px] pb-2 text-[#FFF8EA]">
-              Rifa descentralizada e automatizada via Smart Contract, com
-              integração Chainlink para automação e escolha do ganhador.
+              Uma raffle descentralizada que se gerencia sozinha. Smart contracts em Solidity cuidam das entradas e pagamentos, Chainlink VRF garante aleatoriedade verificável.
             </p>
 
             <div class="flex gap-4 justify-center">
@@ -390,7 +423,7 @@
           </div>
         </div>
 
-        <div
+        <!-- <div
         class="glass-card w-[280px] h-[410px] m-5 p-3 border-[#FFF8EA]"
       >
         <div
@@ -433,7 +466,7 @@
             <span class="tag-chip">React.js</span>
           </div>
         </div>
-      </div>
+      </div> -->
 
         <!-- Card 3 -->
         <div
@@ -451,8 +484,7 @@
               >
             </div>
             <p class="px-3 font-light text-left text-[14px] pb-2 text-[#FFF8EA]">
-              Ferramenta que criei no trabalho como Auditora de Transações para
-              identificar a rede correta de um txID ou endereço de depósito.
+              Ferramenta que criei em 2023 durante meu trabalho como Auditora de Transações na Binance. Cole qualquer txID ou endereço de depósito e descubra a rede correta.
             </p>
 
             <div class="flex gap-4 justify-center mt-2">
@@ -557,69 +589,53 @@
               <div class="timeline-content">
                 <span class="timeline-label"><span class="timeline-dot"></span>2021-2023 — Binance</span>
                 <p class="timeline-title">Auditora de Transações</p>
-                <p class="timeline-body">Dois anos acompanhando dinheiro desaparecer on-chain — depósitos falhos, padrões de esvaziamento, casos extremos que ninguém previu. Auditar transações reais em escala me ensinou exatamente como sistemas on-chain falham.</p>
+                <p class="timeline-body">Passei dois anos vendo dinheiro desaparecer na blockchain, depósitos falhos, padrões de scams. Foi auditando transações reais na blockchain que aprendi exatamente como sistemas falham.</p>
               </div>
             </div>
             <div class="timeline-item">
               <div class="timeline-content">
                 <span class="timeline-label"><span class="timeline-dot"></span>2024 — OKX</span>
                 <p class="timeline-title">Suporte Cripto Sênior</p>
-                <p class="timeline-body">Aprofundei meu entendimento sobre infraestrutura de carteiras, comportamento cross-chain e o que acontece quando usuários interagem com sistemas que não foram feitos para eles.</p>
+                <p class="timeline-body">Aprofundei meu conhecimento sobre infraestrutura de carteiras, comportamento cross-chain e o que acontece quando usuários interagem com sistemas que não foram feitos pensando neles.</p>
               </div>
             </div>
             <div class="timeline-item">
               <div class="timeline-content">
                 <span class="timeline-label"><span class="timeline-dot"></span>2024 — Primeiro Smart Contract</span>
-                <p class="timeline-title">Comecei a construir em Solidity</p>
-                <p class="timeline-body">Decidi construir os sistemas que passei anos vendo quebrar. Comecei com o básico e avancei rápido — primitivos DeFi, stablecoins, NFTs, proxies atualizáveis.</p>
+                <p class="timeline-title">Comecei a desenvolver em Solidity</p>
+                <p class="timeline-body">Decidi construir os sistemas em vez de ficar assistindo eles quebrarem.</p>
               </div>
             </div>
             <div class="timeline-item">
               <div class="timeline-content">
                 <span class="timeline-label"><span class="timeline-dot"></span>2025 — Desenvolvedora Smart Contract</span>
                 <p class="timeline-title">Três protocolos, um ano</p>
-                <p class="timeline-body">Implantei uma rifa integrada ao Chainlink, uma stablecoin sobre-colateralizada com lógica de liquidação e um protocolo de identidade na mainnet do World Chain. Todos ao vivo.</p>
+                <p class="timeline-body">Deployei uma raffle integrada com Chainlink, um protocolo de identidade na World Chain mainnet e uma stablecoin overcollateralizada com lógica de liquidação.</p>
               </div>
             </div>
             <div class="timeline-item">
               <div class="timeline-content">
                 <span class="timeline-label"><span class="timeline-dot"></span>2026 — Hackathon Monad</span>
                 <p class="timeline-title inline-flex items-center gap-2">
-                  <img src="pictures/winner.svg" alt="" class="h-[18px] w-[18px] icon-gold" />
-                  1º lugar com LockFi
+                  🏆 1º lugar com LockFi
                 </p>
-                <p class="timeline-body">Construí um cofre de segurança que detecta saques suspeitos antes de executá-los. Tudo que aprendi sobre como o dinheiro é roubado foi para dentro deste projeto.</p>
+                <p class="timeline-body">Construí um cofre de segurança que detecta saques suspeitos antes de executá-los. Tudo que aprendi vendo sistemas falharem foi parar nesse projeto.</p>
               </div>
             </div>
             <div class="timeline-item">
               <div class="timeline-content">
                 <span class="timeline-label"><span class="timeline-dot timeline-dot--now"></span>Agora</span>
                 <p class="timeline-title">Construindo infraestrutura de segurança on-chain</p>
-                <p class="timeline-body">Baseada no Brasil. Implantando em Ethereum, Monad, World Chain e Stellar. Quando não estou codando, estou na praia ou na quadra de tênis.</p>
+                <p class="timeline-body">Atualmente no Brasil, construindo para o mundo. Quando não estou codando você me encontra na praia ou jogando tênis.</p>
               </div>
             </div>
-          </div>
-
-          <div class="about-text-container mb-4">
-            <p class="bio text-[16px] leading-relaxed">
-              Sou a Letícia, desenvolvedora web3 focada em
-              <span class="highlight text-[#AF8B8B]">smart contracts</span>.
-              Desde 2021 trabalho com
-              <span class="highlight text-[#AF8B8B]">blockchain</span> e
-              <span class="highlight text-[#AF8B8B]">criptomoedas</span>. Tenho
-              feito o ciclo completo dos meus projetos: desenhar a arquitetura,
-              escrever testes sólidos e entregar uma UI pensando na experiência
-              do cliente. <br />
-              Eu já estou há muitos anos trabalhando na indústria de criptografia, onde desenvolvi um forte senso de segurança, confiabilidade e design focado no usuário, que agora trago para a construção de contratos inteligentes e aplicativos Web3. 
-              Quando não estou programando, você me encontra na praia ou jogando tênis.
-            </p>
           </div>
 
           <div class="mt-6">
             <button
               class="btn-outline-cyan button-cv w-44 px-4 py-2"
             >
-              Abra meu CV
+              Acesse meu CV
             </button>
           </div>
         </div>
