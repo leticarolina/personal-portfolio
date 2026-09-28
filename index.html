@@ -9,7 +9,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Antonio:wght@700&family=El+Messiri&family=Hind:wght@300;400&family=Taviraj:ital,wght@0,300;1,400&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Antonio:wght@700&family=El+Messiri&family=Hind:wght@300;400&family=Taviraj:ital,wght@0,300;1,400&family=Caveat:wght@400;600&display=swap"
       rel="stylesheet"
     />
     <!-- CSS -->
@@ -34,41 +34,42 @@
     <!-- DESKTOP NAV -->
     <nav
       id="desktop-nav"
-      class="hidden md:flex items-center justify-around h-[10vh] w-full font-['El_Messiri'] nav-glass text-[#FFF8EA] fixed top-0 left-0 z-30 bg-[#fff8ea0a] "
+      class="hidden md:flex items-center justify-between h-[10vh] w-full font-['El_Messiri'] text-[#594545] fixed top-0 left-0 z-30"
     >
       <div
         id="logo-name"
-        class="text-[19px]  cursor-default text-[#FFF8EA] hover:text-[#D1AEAE] font-bold tracking-wider"
+        class="ml-10 text-[19px] cursor-default text-[#594545] hover:text-[#AF8B8B] font-bold tracking-wider"
       >
         LA
       </div>
 
-      <div>
-        <ul id="navigation-bar" class="flex items-center space-x-4 mr-20 text-[#D1AEAE]">
+      <div class="nav-pill absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2">
+        <ul id="navigation-bar" class="flex items-center space-x-6 text-[#594545]">
           <li>
-            <a href="#about" class="text-[18px] hover:underline underline-offset-[10px] hover:text-[#FFF8EA] transition-colors">
+            <a href="#about" class="text-[16px] transition-colors">
               About me
             </a>
           </li>
           <li>
-            <a href="#projects" class="text-[18px] hover:underline underline-offset-[10px] hover:text-[#FFF8EA] transition-colors">
+            <a href="#projects" class="text-[16px] transition-colors">
               Projects
             </a>
           </li>
           <li>
-            <a href="#contact-me" class="text-[18px] hover:underline underline-offset-[10px] hover:text-[#FFF8EA] transition-colors">
+            <a href="#contact-me" class="text-[16px] transition-colors">
               Contact me
             </a>
           </li>
         </ul>
+        <span class="nav-underline" aria-hidden="true"></span>
       </div>
 
-      <div class="translate bg-transparent border-0">
+      <div class="translate mr-10 bg-transparent border-0">
         <img
           src="pictures/translate-26.svg"
           alt="Arrow icon"
           id="translate-menu-icon"
-          class="h-[30px] w-[30px] hover:scale-110 transition-transform"
+          class="icon-dark h-[24px] w-[24px] hover:scale-110 transition-transform"
         />
       </div>
     </nav>
@@ -76,33 +77,34 @@
     <!-- MOBILE NAV -->
     <nav
       id="mobile-nav"
-      class="md:hidden flex items-center h-[10vh] w-full px-4 fixed top-0 left-0 z-30 text-[#D1AEAE] nav-glass bg-[#fff8ea0a] "
+      class="md:hidden flex items-center justify-between h-[10vh] w-full fixed top-0 left-0 z-30 text-[#594545]"
     >
-      <div class="w-16">
-        <span id="logo-name" class="font-['El_Messiri'] text-[19px] text-[#FFF8EA] hover:text-[#D1AEAE] font-bold">
-          LA
-        </span>
+      <span id="logo-name" class="ml-10 font-['El_Messiri'] text-[19px] text-[#594545] hover:text-[#AF8B8B] font-bold">
+        LA
+      </span>
+
+      <div class="nav-pill absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2">
+        <ul class="flex items-center gap-6 font-['El_Messiri']">
+          <li>
+            <a href="#projects" class="text-[15px] hover:text-[#AF8B8B] transition-colors">
+              Projects
+            </a>
+          </li>
+          <li>
+            <a href="#about" class="text-[15px] hover:text-[#AF8B8B] transition-colors">
+              About me
+            </a>
+          </li>
+        </ul>
+        <span class="nav-underline" aria-hidden="true"></span>
       </div>
 
-      <ul class="flex items-center gap-8 mx-auto  font-['El_Messiri']">
-        <li>
-          <a href="#projects" class="text-[16px] hover:underline underline-offset-4 hover:text-[#FFF8EA] transition-colors">
-            Projects
-          </a>
-        </li>
-        <li>
-          <a href="#about" class="text-[16px] hover:underline underline-offset-4 hover:text-[#FFF8EA] transition-colors">
-            About me
-          </a>
-        </li>
-      </ul>
-
-      <button class="w-16 flex justify-end translate">
+      <button class="translate mr-10 flex">
         <img
           src="pictures/translate-26.svg"
           alt="Translate"
           id="translate-menu-icon"
-          class="h-[28px] w-[28px] hover:scale-110 transition-transform"
+          class="icon-dark h-[22px] w-[22px] hover:scale-110 transition-transform"
         />
       </button>
     </nav>
@@ -113,36 +115,44 @@
     class="relative flex flex-col md:flex-row w-full overflow-hidden hero-gradient-overlay bg-dot-pattern h-[100vh]"
   >
 
+    <div style="display:flex; align-items:center; width:100%; max-width:1100px; margin:0 auto; padding:0 48px; height:100%;">
     <!-- TEXT COLUMN -->
-    <div class="flex flex-col justify-center h-full pl-8 md:pl-20 w-full md:w-1/2 z-20 pt-[10vh] md:pt-0">
+    <div class="flex flex-col justify-center h-full w-full md:w-1/2 z-20 pt-[10vh] md:pt-0">
       <img
       src="pictures/flower.svg"
       alt=""
       aria-hidden="true"
       class="hero-flower-left pointer-events-none select-none absolute top-[65%] md:top-1/2 -translate-y-1/2 -left-[45%] lg:-left-[15%] md:h-[80vh] w-auto -z-10 opacity-0 hidden"
     />
+
+      <!-- LABEL -->
+      <div class="flex items-center gap-4">
+        <span class="font-['El_Messiri'] text-[12px] md:text-[13px] tracking-[0.25em] uppercase text-[#AF8B8B]">
+          Web3 Solidity Developer
+        </span>
+        <span class="h-px w-14 md:w-24 bg-[#AF8B8B] opacity-60" aria-hidden="true"></span>
+      </div>
+
       <!-- NAME -->
-      <h1 class="name lg:flex text-6xl md:text-8xl font-extrabold leading-none tracking-tight ">
-        LETICIA <span class="font-light italic text-gradient-cyan-purple">AZEVEDO</span>
+      <h1 class="name flex flex-col text-6xl md:text-8xl leading-[0.95] tracking-tight font-['Taviraj'] text-[#594545] mt-4">
+        <span class="font-light">LETICIA</span>
+        <span class="italic">AZEVEDO</span>
       </h1>
 
       <!-- TAGLINE -->
-      <h1 class="lg:flex font-extrabold leading-none tracking-tight ml-0 lg:ml-48">
-        <span class="font-light not-italic text-[#D1AEAE] text-[22px] md:text-[26px] tracking-[0.09em] block mt-[90px] md:mt-4">
-          <span class="block text-[22px] md:text-[26px] text-[#FFF8EA] mb-2 italic lg:whitespace-nowrap">I write code that protects money</span>
-          <span class="font-['El_Messiri'] block text-[14px] md:text-[15px] tracking-[0.15em] mt-1 text-[#D1AEAE] uppercase">Web3 Solidity Developer</span>
-        </span>
-      </h1>
+      <p class="mt-6 md:mt-8 text-[18px] md:text-[21px] font-['Hind'] font-light not-italic text-left text-[#594545]">
+        I write code that protects money.
+      </p>
 
-      <!-- BUTTONS -->
-      <div class="mt-8 lg:mt-16 flex gap-5 text-white">
+      <!-- SOCIAL ICONS -->
+      <div class="mt-8 lg:mt-12 flex gap-5">
         <a
           href="https://github.com/leticarolina"
           target="_blank"
           rel="noreferrer"
           class="btn-ghost inline-flex items-center gap-2 px-3 py-2 justify-center glow-cyan-hover transition"
         >
-          <img src="pictures/github.svg" alt="GitHub" class="h-8 w-8 icon-light" />
+          <img src="pictures/github.svg" alt="GitHub" class="h-8 w-8 icon-dark" />
 
         </a>
 
@@ -152,7 +162,7 @@
           rel="noreferrer"
           class="btn-ghost inline-flex items-center gap-2 px-3 py-2 justify-center glow-cyan-hover transition"
         >
-          <img src="pictures/linkedin.svg" alt="LinkedIn" class="h-8 w-8 icon-light" />
+          <img src="pictures/linkedin.svg" alt="LinkedIn" class="h-8 w-8 icon-dark" />
         </a>
 
         <a
@@ -161,16 +171,30 @@
         rel="noreferrer"
         class="btn-ghost inline-flex items-center gap-2 px-3 py-2 justify-center glow-cyan-hover transition"
       >
-        <img src="pictures/x.svg" alt="X" class="h-8 w-8 icon-light" />
+        <img src="pictures/x.svg" alt="X" class="h-8 w-8 icon-dark" />
       </a>
+      </div>
+
+      <!-- CTA -->
+      <div class="mt-6 md:mt-8">
+        <a href="#projects" class="hero-cta inline-flex items-center gap-4 group">
+          <span class="font-['El_Messiri'] text-[13px] tracking-[0.2em] uppercase">Explore my work</span>
+          <span class="hero-cta-circle">&darr;</span>
+        </a>
       </div>
     </div>
 
     <!-- IMAGE COLUMN -->
 
-    <div class="relative hidden md:flex md:justify-end w-full md:w-1/2 mt-8 ">
+    <div class="relative hidden md:flex md:justify-end w-full md:w-[40%] mt-8 ">
       <img src="pictures/leticia.jpeg" alt="Portrait of Leticia" id="hero-img"
-      class="h-[62vh] w-auto max-w-[340px] object-cover object-top rounded-2xl md:absolute md:right-8 lg:right-40 md:top-1/2 md:-translate-y-1/2 opacity-60 hover:opacity-90 transition shadow-[0_8px_40px_rgba(58,38,38,0.6)]" />
+      class="ml-auto block h-[62vh] w-auto max-w-[340px] object-cover object-top rounded-2xl opacity-90 hover:opacity-100 transition shadow-[0_8px_40px_rgba(58,38,38,0.25)]" />
+    </div>
+
+    <!-- HANDWRITTEN ANNOTATION -->
+    <span class="hero-annotation hidden lg:block absolute top-[15%] right-6" aria-hidden="true">
+      smart contracts /<br />real world impact
+    </span>
     </div>
 
     <!-- IMAGE COLUMN (mobile ONLY) -->
@@ -178,18 +202,9 @@
   <img
     src="pictures/leticia.jpeg"
     alt="Portrait of Leticia mobile"
-    class="absolute right-3 top-1/5 -translate-y-1/2 h-[40vh] w-auto object-cover rounded-xl opacity-70"
+    class="absolute right-3 top-1/5 -translate-y-1/2 h-[40vh] w-auto object-cover rounded-xl opacity-90"
   />
 </div>
-
-
-    <!-- SCROLL ARROW -->
-    <a
-      href="#projects"
-      class="absolute bottom-6 left-1/2 -translate-x-1/2 opacity-70 hover:opacity-100 transition"
-    >
-      <img src="pictures/arrow.svg" class="rotate-180 h-8 w-8 arrow-cyan" />
-    </a>
 
   </section>
 
@@ -696,9 +711,31 @@
         </nav>
 
         <p class="copyright text-center text-[#9E7676] mt-6 text-[13px]">
-          © 2023 Leticia Azevedo. All rights reserved.
+          © 2026 Leticia Azevedo. All rights reserved.
         </p>
       </div>
     </footer>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        document.querySelectorAll(".nav-pill").forEach((pill) => {
+          const underline = pill.querySelector(".nav-underline");
+          const links = pill.querySelectorAll("a");
+          if (!underline || !links.length) return;
+
+          links.forEach((link) => {
+            link.addEventListener("mouseenter", () => {
+              underline.style.width = link.offsetWidth + "px";
+              underline.style.transform = `translateX(${link.offsetLeft}px)`;
+              underline.style.opacity = "1";
+            });
+          });
+
+          pill.addEventListener("mouseleave", () => {
+            underline.style.opacity = "0";
+          });
+        });
+      });
+    </script>
   </body>
 </html>
